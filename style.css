@@ -240,3 +240,8 @@ form {
 .wobble {
   animation: wobble 5s;
 }
+
+a {
+  color: red;
+  background-color: white;
+}
