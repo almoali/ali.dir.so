@@ -1,187 +1,174 @@
 body {
-    background-color: tomato;
-}           
+  background-color: tomato;
+}
+
 h1 {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .islamic-info {
-    background-color: pink;
+  background-color: pink;
 }
 
 #islamic-pillars {
-    background-color: pink;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
+  background-color: pink;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
 }
 
 #islamic-iman {
-    background-color: pink;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
+  background-color: pink;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
 }
 
 h1 {
-    background-color: pink;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 900;
-    margin-left: 150px;
-    margin-right: 150px;
+  background-color: pink;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900;
+
 }
 
 .quranrec {
-    background-color: pink;
-    font: bold;
+  background-color: pink;
+  font: bold;
 }
 
 p {
-    color: blue;
-    background-color: pink;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: 'Courier New', Courier, monospace
-    
+  color: blue;
+  background-color: pink;
+
+  font-family: 'Courier New', Courier, monospace
 }
 
 .bigqu2 {
-    font-size: 18px;
-    background-color: yellow;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color: yellow;
+
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .bigqu1 {
-    font-size: 18px;
-    background-color: yellow;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  background-color: yellow;
+
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #list {
-    color: rgb(83, 66, 156);
-    background-color: pink;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 155;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: rgb(83, 66, 156);
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 155;
+
 }
 
 .surahname {
-    color: rgb(4, 48, 49);
-    background-color: rgb(209, 160, 255);
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: rgb(4, 48, 49);
+  background-color: rgb(209, 160, 255);
+  text-align: center;
+
 }
 
 
 #islamic-pillar {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: indigo;
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 .pillar-iman {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: indigo;
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
 .islamic-info1 {
-    color: red;
-    background-color: yellow;
-    font-style: italic;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: 'Courier New', Courier, monospace;
+  color: red;
+  background-color: yellow;
+  font-style: italic;
+
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .audiotest {
-    color: red;
-    background-color: yellow;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: red;
+  background-color: yellow;
+
 }
 
 .islampillar {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 150px;
-    margin-right: 150px;
+  color: indigo;
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 #makkah {
-    width: 45%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ka3baa {
-    color: red;
-    background-color: yellow;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: 'Courier New', Courier, monospace;
+  color: red;
+  background-color: yellow;
+
+  font-family: 'Courier New', Courier, monospace;
 
 }
 
 #thisisquran {
-    background-color: pink;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: pink;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h3 {
-    color: blue;
-    background-color: pink;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blue;
+  background-color: pink;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2 {
-    color: blue;
-    background-color: pink;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blue;
+  background-color: pink;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 form {
-    margin-left: 150px;
-    margin-right: 150px;
-    color: blue;
-    background-color: pink;
-    font-family: 'Courier New', Courier, monospace;
+
+  color: blue;
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .quiz {
-    color: blue;
-    margin-right: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: xx-large;
+  color: blue;
+  margin-right: 150px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
 }
+
 .contact {
-    color: blue;
-    margin-left: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: xx-large;
+  color: blue;
+  margin-left: 150px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
 }
 
 .seerah {
-    color: blue;
-    margin-right: 150px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: xx-large;
+  color: blue;
+  margin-right: 150px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
 
 }
 
@@ -189,6 +176,7 @@ form {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -205,9 +193,11 @@ form {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -221,26 +211,32 @@ form {
   0% {
     transform: translateX(0%);
   }
+
   15% {
     transform: translateX(-30%) rotate(-5deg);
   }
+
   30% {
     transform: translateX(25%) rotate(3deg);
   }
+
   45% {
     transform: translateX(-20%) rotate(-3deg);
   }
+
   60% {
     transform: translateX(15%) rotate(2deg);
   }
+
   75% {
     transform: translateX(-10%) rotate(-1deg);
   }
+
   100% {
     transform: translateX(0%);
   }
 }
 
 .wobble {
-  animation: wobble 5s; 
+  animation: wobble 5s;
 }
