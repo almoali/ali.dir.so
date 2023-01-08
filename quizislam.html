@@ -186,48 +186,52 @@
   <div class="bounce" class="wobble" class="pulse" class="slide-in">
     <h1>Islam Quiz</h1>
     <form>
-          <form id="quiz-form">
-            <p>What is the meaning of the word "Islam"?</p>
-            <input type="radio" name="q1" value="a"> Submission to God<br>
-            <input type="radio" name="q1" value="b"> Peace<br>
-            <input type="radio" name="q1" value="c"> Love<br>
-            <input type="radio" name="q1" value="d"> Faith<br>
-            <input type="radio" name="q1" value="e"> All of Above<br>
-            
-            <p>How many pillars of Islam are there?</p>
-            <input type="radio" name="q2" value="a"> 3<br>
-            <input type="radio" name="q2" value="b"> 4<br>
-            <input type="radio" name="q2" value="c"> 5<br>
-            <input type="radio" name="q2" value="d"> 6<br>
-            
-            <button type="submit">Submit Quiz</button>
-          </form>
-          
-          <script>
-            const form = document.getElementById("quiz-form");
-            form.addEventListener("submit", function(event) {
-              event.preventDefault();
-              let score = 0;
-              
-              // Check answers
-              if (form.elements.q1.value === "a") {
-                score++;
-              }
-              if (form.elements.q2.value === "e") {
-                score++;
-              }
-              
-              // Show result
-              if (score === 2) {
-                alert("Congratulations, you passed the quiz!");
-              } else {
-                alert("Sorry, you failed the quiz. Better luck next time!");
-              }
-            });
-          </script>
-  </center>
-  
-  </form>
+      <form id="quiz-form">
+        <p>What is the meaning of the word "Islam"?</p>
+        <input type="radio" name="q1" value="a"> Submission to God<br>
+        <input type="radio" name="q1" value="b"> Peace<br>
+        <input type="radio" name="q1" value="c"> Love<br>
+        <input type="radio" name="q1" value="d"> Faith<br>
+        <input type="radio" name="q1" value="e"> All of Above<br>
+
+        <p>How many pillars of Islam are there?</p>
+        <input type="radio" name="q2" value="a"> 3<br>
+        <input type="radio" name="q2" value="b"> 4<br>
+        <input type="radio" name="q2" value="c"> 5<br>
+        <input type="radio" name="q2" value="d"> 6<br>
+
+        <button type="submit">Submit Quiz</button>
+      </form>
+
+      <script>
+        const form = document.getElementById("quiz-form");
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          let score = 0;
+
+          // Check answers
+          if (form.elements.q1.value === "a") {
+            score++;
+          }
+          if (form.elements.q2.value === "e") {
+            score++;
+          }
+
+          // Show result
+          if (score === 2) {
+            alert("Congratulations, you passed the quiz!");
+          } else {
+            alert("Sorry, you failed the quiz. Better luck next time!");
+          }
+        });
+
+
+        // WHta ever
+        var names = "YOU PASSED THE QUIZ!"
+      </script>
+      </center>
+
+    </form>
 
 </body>
 

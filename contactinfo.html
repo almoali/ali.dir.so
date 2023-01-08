@@ -10,7 +10,7 @@
 
       a {
         color: red;
-        
+
       }
 
       .email {
@@ -118,6 +118,8 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: x-large;
       }
+
+      .buttonforinfo {}
     </style>
   </head>
 
@@ -157,8 +159,22 @@
       </ul>
     </div>
 
+    <div>
+      First name<input id="firstname" name="first"><br><br>
+      Middle name<input id="lastname" name="Middle"><br> <br>
+      <button class="buttonforinfo" type="button" onclick="NAMEINFO()">Submit Info</button>
+    </div>
 
+    <script>
+      function NAMEINFO() {
+        var fname = document.getElementById("firstname").value;
+        var lname = document.getElementById("lastname").value;
 
+        alert("Welcome " + fname + " " + lname);
+
+      }
+
+    </script>
 
   </body>
 </center>
