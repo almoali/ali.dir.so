@@ -14,6 +14,8 @@
 
       }
 
+
+
       a {
         background-color: white;
         margin-left: 150px;
@@ -184,88 +186,47 @@
   <div class="bounce" class="wobble" class="pulse" class="slide-in">
     <h1>Islam Quiz</h1>
     <form>
-      <p>What is the central belief of Islam?</p>
-      <input type="radio" name="q1" value="a"> That there is only one true god, Allah <br>
-      <input type="radio" name="q1" value="b"> That there are many gods and goddesses <br>
-      <input type="radio" name="q1" value="c"> That everything in the universe is connected and should be respected <br>
-      <input type="radio" name="q1" value="d"> That there is no god and people should focus on their own lives <br>
-
-      <p>Who is considered the founder of Islam?</p>
-      <input type="radio" name="q2" value="a"> Jesus <br>
-      <input type="radio" name="q2" value="b"> Muhammad <br>
-      <input type="radio" name="q2" value="c"> Abraham <br>
-      <input type="radio" name="q2" value="d"> Moses <br>
-
-      <p>What is the holy book of Islam called?</p>
-      <input type="radio" name="q3" value="a"> The Quran <br>
-      <input type="radio" name="q3" value="b"> The Bible <br>
-      <input type="radio" name="q3" value="c"> The Book of Mormon <br>
-      <input type="radio" name="q3" value="d"> The Talmud <br>
-
-      <p>How many times a day do Muslims pray?</p>
-      <input type="radio" name="q4" value="a"> 3 times <br>
-      <input type="radio" name="q4" value="b"> 5 times <br>
-      <input type="radio" name="q4" value="c"> 7 times <br>
-      <input type="radio" name="q4" value="d"> 9 times <br>
-
-      <p>What is the significance of the Kaaba in Islam?</p>
-      <input type="radio" name="q5" value="a"> It is the birthplace of Muhammad <br>
-      <input type="radio" name="q5" value="b"> It is the most sacred site in Islam and is located in Mecca <br>
-      <input type="radio" name="q5" value="c"> It is a symbol of the unity of the Muslim community <br>
-      <input type="radio" name="q5" value="d"> All of the above <br>
-
-      <p>How is the Islamic calendar determined?</p>
-      <input type="radio" name="q6" value="a"> By the cycles of the moon <br>
-      <input type="radio" name="q6" value="b"> By the solar cycle <br>
-      <input type="radio" name="q6" value="c"> By the cycles of the planet Jupiter <br>
-      <input type="radio" name="q6" value="d"> By the cycles of
-
-
-
-      <button onclick="checkAnswers()">Submit Quiz</button>
-  </div>
-
-
+          <form id="quiz-form">
+            <p>What is the meaning of the word "Islam"?</p>
+            <input type="radio" name="q1" value="a"> Submission to God<br>
+            <input type="radio" name="q1" value="b"> Peace<br>
+            <input type="radio" name="q1" value="c"> Love<br>
+            <input type="radio" name="q1" value="d"> Faith<br>
+            <input type="radio" name="q1" value="e"> All of Above<br>
+            
+            <p>How many pillars of Islam are there?</p>
+            <input type="radio" name="q2" value="a"> 3<br>
+            <input type="radio" name="q2" value="b"> 4<br>
+            <input type="radio" name="q2" value="c"> 5<br>
+            <input type="radio" name="q2" value="d"> 6<br>
+            
+            <button type="submit">Submit Quiz</button>
+          </form>
+          
+          <script>
+            const form = document.getElementById("quiz-form");
+            form.addEventListener("submit", function(event) {
+              event.preventDefault();
+              let score = 0;
+              
+              // Check answers
+              if (form.elements.q1.value === "a") {
+                score++;
+              }
+              if (form.elements.q2.value === "e") {
+                score++;
+              }
+              
+              // Show result
+              if (score === 2) {
+                alert("Congratulations, you passed the quiz!");
+              } else {
+                alert("Sorry, you failed the quiz. Better luck next time!");
+              }
+            });
+          </script>
   </center>
-  <script>
-    function checkAnswers() {
-      var totalCorrect = 0;
-      var q1 = document.forms["quiz"]["q1"].value;
-      var q2 = document.forms["quiz"]["q2"].value;
-      var q3 = document.forms["quiz"]["q3"].value;
-      var q4 = document.forms["quiz"]["q4"].value;
-      var q5 = document.forms["quiz"]["q5"].value;
-      var q6 = document.forms["quiz"]["q6"].value;
-      var q7 = document.forms["quiz"]["q7"].value;
-
-      if (q1 == "a") {
-        totalCorrect++;
-      }
-      if (q2 == "b") {
-        totalCorrect++;
-      }
-      if (q3 == "a") {
-        totalCorrect++;
-      }
-      if (q4 == "b") {
-        totalCorrect++;
-      }
-      if (q5 == "d") {
-        totalCorrect++;
-      }
-      if (q6 == "a") {
-        totalCorrect++;
-      }
-      if (q7 == "c") {
-        totalCorrect++;
-      }
-
-
-    }
-
-
-  </script>
-
+  
   </form>
 
 </body>
