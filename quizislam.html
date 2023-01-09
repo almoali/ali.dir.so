@@ -3,6 +3,8 @@
 
 <head>
   <title>Quiz</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
   <center>
     <style>
       form {
@@ -10,8 +12,6 @@
         margin: 0 auto;
         text-align: left;
         color: yellow;
-        font-family: 'Courier New', Courier, monospace;
-
       }
 
 
@@ -26,7 +26,6 @@
         margin-top: 0;
         background-color: pink;
         color: blue;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
       }
 
@@ -40,13 +39,16 @@
         background-color: #4CAF50;
         color: white;
         cursor: pointer;
-        color: blue;
+      }
+
+      button:hover {
+        background-color: blue;
+
       }
 
       p {
         background-color: pink;
         color: blue;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
       }
 
@@ -151,6 +153,25 @@
         color: red;
         font-family: cursive;
       }
+
+      .submitquiz {
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border: none;
+        width: 74px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .submitquiz:hover{
+        background-color: blue;
+      }
     </style>
 </head>
 
@@ -200,7 +221,7 @@
         <input type="radio" name="q2" value="c"> 5<br>
         <input type="radio" name="q2" value="d"> 6<br>
 
-        <button type="submit">Submit Quiz</button>
+        <button class="submitquiz" type="submit">Submit Quiz</button>
       </form>
 
       <script>
