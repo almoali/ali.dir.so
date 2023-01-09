@@ -56,97 +56,44 @@
         background-color: tomato;
       }
 
-      @keyframes slideIn {
-        0% {
-          transform: translateX(-100%);
-        }
-
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      .slide-in {
-        animation: slideIn 3s ease-out;
-        background-image: url(pattern.png);
-        height: 200px;
-        width: 200px;
-        background-size: cover;
-      }
-
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-
-        50% {
-          transform: scale(1.1);
-        }
-
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .pulse {
-        animation: pulse 10s linear infinite;
-      }
-
-      @keyframes wobble {
-        0% {
-          transform: translateX(0%);
-        }
-
-        15% {
-          transform: translateX(-30%) rotate(-5deg);
-        }
-
-        30% {
-          transform: translateX(25%) rotate(3deg);
-        }
-
-        45% {
-          transform: translateX(-20%) rotate(-3deg);
-        }
-
-        60% {
-          transform: translateX(15%) rotate(2deg);
-        }
-
-        75% {
-          transform: translateX(-10%) rotate(-1deg);
-        }
-
-        100% {
-          transform: translateX(0%);
-        }
-      }
-
-      .wobble {
-        animation: wobble 5s;
-
-      }
-
       .HOMEPAGE {
         color: blue;
-        margin-right: 150px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: xx-large;
-      }
-
-      .contact {
-        color: blue;
-        margin-left: 150px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: xx-large;
+        font-size: x-large;
+        background-color: rgb(2, 158, 255);
+        border: none;
+        height: 30px;
+        width: 180px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-bottom: 15px;
       }
 
       .seerah {
         color: blue;
-        margin-right: 150px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: xx-large;
+        font-size: x-large;
+        background-color: rgb(2, 158, 255);
+        border: none;
+        height: 30px;
+        width: 65px;
+        border-radius: 15px;
+        cursor: pointer;
+        text-align: justify;
+      }
 
+      .contact {
+        color: blue;
+        font-size: x-large;
+        background-color: rgb(2, 158, 255);
+        border: none;
+        height: 30px;
+        width: 150px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      a:hover {
+        color: maroon;
       }
 
       .prog {
@@ -169,8 +116,29 @@
         margin-left: 150px;
         margin-right: 150px;
       }
-      .submitquiz:hover{
+
+      .submitquiz:hover {
         background-color: blue;
+      }
+
+      .contactbutton {
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border: none;
+        width: 74px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      button:hover {
+        background-color: red;
       }
     </style>
 </head>
@@ -182,7 +150,7 @@
   <div>
     <nav>
       <ul class="seerah">
-        <li><a href="seerasaw.html">THE SEERAH</a></li>
+        <li><a href="seerasaw.html">SEERAH</a></li>
       </ul>
     </nav>
     <!--CONTACT WEBPAGE-->
@@ -221,7 +189,9 @@
         <input type="radio" name="q2" value="c"> 5<br>
         <input type="radio" name="q2" value="d"> 6<br>
 
-        <button class="submitquiz" type="submit">Submit Quiz</button>
+        <button class="submitquiz" type="submit">Submit Quiz</button><br><br><br>
+        <a class="contactbutton" href="contactinfo.html">Last Page</a>
+
       </form>
 
       <script>
@@ -231,10 +201,10 @@
           let score = 0;
 
           // Check answers
-          if (form.elements.q1.value === "a") {
+          if (form.elements.q1.value === "e") {
             score++;
           }
-          if (form.elements.q2.value === "e") {
+          if (form.elements.q2.value === "c") {
             score++;
           }
 
@@ -248,7 +218,7 @@
 
 
         // WHta ever
-        var names = "YOU PASSED THE QUIZ!"
+        var names = "Congratulations, you passed the quiz!"
       </script>
       </center>
 
