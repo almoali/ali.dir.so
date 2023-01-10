@@ -131,7 +131,7 @@
       }
 
       .seerah {
-        color:  rgb(2, 158, 255);
+        color: rgb(2, 158, 255);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: x-large;
         background-color: blue;
@@ -158,6 +158,45 @@
 
       .buttonforinfo:hover {
         background-color: blue;
+      }
+
+      form {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+      }
+
+      form h3 {
+        color: #555;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      form input,
+      form textarea {
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: none;
+        background: #f5f5f5;
+        font-size: 12px;
+      }
+
+      form button {
+        padding: 15px;
+        background: #ff5361;
+        color: #fff;
+        font-size: 18px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        width: 150px;
+        margin: 20px auto 0;
+        border-radius: 30px;
       }
     </style>
   </head>
@@ -194,22 +233,20 @@
       </ul>
     </div>
 
-    <div>
-      First name<input id="firstname" name="first"><br><br>
-      Middle name<input id="lastname" name="Middle"><br> <br>
-      <button class="buttonforinfo" type="button" onclick="NAMEINFO()">Submit</button>
+    <div class="container">
+      <form action="https://formsubmit.co/your@email.com" method="POST" />
+      <h3>GET IN TOUCH</h3>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email2" placeholder="Email Address" required>
+      <textarea id="message" rows="10" placeholder="How can we help you?"></textarea>
+      <button type="submit">Send</button>
+
+      </form>
+      contact form still in progress<br>
+      contact form still in progress<br>
+      contact form still in progress<br>
+      contact form still in progress
     </div>
-
-    <script>
-      function NAMEINFO() {
-        var fname = document.getElementById("firstname").value;
-        var lname = document.getElementById("lastname").value;
-
-        alert("Welcome " + fname + " " + lname);
-
-      }
-
-    </script>
 
   </body>
 </center>
