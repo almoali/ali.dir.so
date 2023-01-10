@@ -13,7 +13,7 @@ h1 {
 }
 
 #islamic-pillars {
-  background-color: pink;  
+  background-color: pink;
   font-weight: 900;
 }
 
@@ -21,6 +21,11 @@ h1 {
   background-color: pink;
   font-family: 'Lato', serif;
   font-weight: 900;
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -76,6 +81,8 @@ p {
   color: indigo;
   background-color: pink;
   font-family: 'Lato', serif;
+  scroll-behavior: smooth;
+
 
 }
 
@@ -172,82 +179,13 @@ form {
 
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.slide-in {
-  animation: slideIn 3s ease-out;
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.pulse {
-  animation: pulse 10s;
-}
-
-@keyframes wobble {
-  0% {
-    transform: translateX(0%);
-  }
-
-  15% {
-    transform: translateX(-30%) rotate(-5deg);
-  }
-
-  30% {
-    transform: translateX(25%) rotate(3deg);
-  }
-
-  45% {
-    transform: translateX(-20%) rotate(-3deg);
-  }
-
-  60% {
-    transform: translateX(15%) rotate(2deg);
-  }
-
-  75% {
-    transform: translateX(-10%) rotate(-1deg);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-.wobble {
-  animation: wobble 5s;
-}
-
 a {
-  color: red;
-  background-color: white;
+  color: ;
+  border-radius: 5px;
 }
 
-a:hover{
-  color: rgb(2, 158, 255);
+a:hover {
+  color: black;
 }
 
 .nextpagebutton {
@@ -266,4 +204,57 @@ a:hover{
 
 .nextpagebutton:hover {
   background-color: blue;
+}
+
+.seerah {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 170px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.seerah:hover {
+  color: maroon;
+}
+
+.quiz {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 65px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.quiz:hover {
+  color: black;
+}
+
+.contact {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 130px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.contact:hover {
+  color: red;
 }
