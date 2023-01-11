@@ -35,75 +35,6 @@
         font-family: 'Courier New', Courier, monospaces;
       }
 
-      @keyframes slideIn {
-        0% {
-          transform: translateX(-100%);
-        }
-
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      .slide-in {
-        animation: slideIn 3s ease-out;
-        height: 200px;
-        width: 200px;
-        background-size: cover;
-      }
-
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-
-        50% {
-          transform: scale(1.1);
-        }
-
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .pulse {
-        animation: pulse 10s;
-      }
-
-      @keyframes wobble {
-        0% {
-          transform: translateX(0%);
-        }
-
-        15% {
-          transform: translateX(-30%) rotate(-5deg);
-        }
-
-        30% {
-          transform: translateX(25%) rotate(3deg);
-        }
-
-        45% {
-          transform: translateX(-20%) rotate(-3deg);
-        }
-
-        60% {
-          transform: translateX(15%) rotate(2deg);
-        }
-
-        75% {
-          transform: translateX(-10%) rotate(-1deg);
-        }
-
-        100% {
-          transform: translateX(0%);
-        }
-      }
-
-      .wobble {
-        animation: wobble 5s;
-      }
-
       .HOMEPAGE {
         color: blue;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -160,44 +91,37 @@
         background-color: blue;
       }
 
-      form {
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        padding: 2vw 4vw;
-        width: 90%;
-        max-width: 600px;
-        border-radius: 10px;
+      .email-link {
+        text-decoration: none;
+        color: black;
+        display: inline-flex;
+        align-items: center;
+        padding: 9px 8px;
+        margin-left: -8px;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: border-color 0.15s cubic-bezier(0.4, 0, 1, 1);
       }
 
-      form h3 {
-        color: #555;
-        font-weight: 800;
-        margin-bottom: 20px;
-      }
-
-      form input,
-      form textarea {
-        border: 0;
-        margin: 10px 0;
-        padding: 20px;
-        outline: none;
-        background: #f5f5f5;
-        font-size: 12px;
-      }
-
-      form button {
-        padding: 15px;
-        background: #ff5361;
-        color: #fff;
-        font-size: 18px;
-        border: 0;
-        outline: none;
+      .blabla2:hover {
+        border-color:black;
+        border-style: solid;
+        border-width: 1px;
+        color: black;
+        height: 222px;
+        border-radius: 2px;
         cursor: pointer;
-        width: 150px;
-        margin: 20px auto 0;
-        border-radius: 30px;
+        display: block;
+        height: 73px;
+        padding: 10px;
+      
       }
+
+      .gmail-icon2 {
+        margin-top: 12px;
+      }
+
+      #btn {}
     </style>
   </head>
 
@@ -223,32 +147,28 @@
       </nav>
     </div>
 
+    <h1><b><u>Contact info</b></u></h1>
+    <p>Hello again, If you have any questions about ISLAM <b>don't hesitate to Email us at.</b></p>
+    <div style="display: inline-block;">
+      <a href="mailto:islamoali188@gmail.com" class="blabla2" style="
+      
+        display: block;
+        height: 73px;
+        padding: 10px;
+      ">
 
-    <div class="wobble" class="pulse" class="slide-in">
-      <h1><b><u>Contact info</b></u></h1>
-      <p>Hello again, If you have any questions about ISLAM <b>don't hesitate to Email us at.</b></p>
-      <ul>
-        <li class="email"><u><a href="https://mail.google.com/">islamoali188@gmail.com</a></br>
-        </li>
-      </ul>
+        <img class="gmail-icon2" src="/Gmail.max-1100x1100.ico" alt="email icon">
+        <div>email me</div>
+      </a>
     </div>
-
-    <div class="container">
-      <form action="https://formsubmit.co/your@email.com" method="POST" />
-      <h3>GET IN TOUCH</h3>
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email2" placeholder="Email Address" required>
-      <textarea id="message" rows="10" placeholder="How can we help you?"></textarea>
-      <button type="submit">Send</button>
+    <div>
+      <form style="margin-top: 20px;">
+        First Name <input type="text" id="firstname" required><br><br>
+        Email Address <input type="email" id="email2" required><br><br>
 
       </form>
-      contact form still in progress<br>
-      contact form still in progress<br>
-      contact form still in progress<br>
-      contact form still in progress
     </div>
 
   </body>
-</center>
 
 </html>
