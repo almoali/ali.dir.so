@@ -104,7 +104,7 @@
       }
 
       .blabla2:hover {
-        border-color:black;
+        border-color: black;
         border-style: solid;
         border-width: 1px;
         color: black;
@@ -114,19 +114,29 @@
         display: block;
         height: 73px;
         padding: 10px;
-      
+
+      }
+
+      .blabla2 {
+        display: block;
+        height: 73px;
+        padding: 10px;
       }
 
       .gmail-icon2 {
         margin-top: 12px;
       }
 
-      #btn {}
+      #submitbtn{
+        background: transparent;
+        width: 30%;
+      }
+
     </style>
   </head>
 
   <body>
-    <title>Contact Info</title>
+    <title>Contact Us</title>
 
 
     <!--QUIZ WEBPAGE-->
@@ -147,28 +157,30 @@
       </nav>
     </div>
 
-    <h1><b><u>Contact info</b></u></h1>
+    <h1><b><u>Contact Us</b></u></h1>
     <p>Hello again, If you have any questions about ISLAM <b>don't hesitate to Email us at.</b></p>
     <div style="display: inline-block;">
-      <a href="mailto:islamoali188@gmail.com" class="blabla2" style="
-      
-        display: block;
-        height: 73px;
-        padding: 10px;
-      ">
+      <a href="mailto:islamoali188@gmail.com" class="blabla2">
 
         <img class="gmail-icon2" src="/Gmail.max-1100x1100.ico" alt="email icon">
-        <div>email me</div>
+        <div>Email us</div>
       </a>
     </div>
     <div>
       <form style="margin-top: 20px;">
-        First Name <input type="text" id="firstname" required><br><br>
-        Email Address <input type="email" id="email2" required><br><br>
+        <input type="text" id="firstname" placeholder="First Name: " required><br><br>
+        <input type="text" id="lastname" placeholder="Last Name: " required><br><br>
+        <button onclick="alertfullname" id="submitbtn">Submit</button>
 
       </form>
     </div>
-
+<script>
+  function alertfullname () {
+    var firstname = document.getElementById("firstname").value;
+    var firstname = document.getElementById("firstname").value;
+    alert(firstname + " " + lastname)
+  }
+</script>
   </body>
 
 </html>

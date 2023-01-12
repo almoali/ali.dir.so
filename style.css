@@ -157,13 +157,6 @@ form {
   font-family: 'Lato', serif;
 }
 
-.quiz {
-  color: blue;
-  margin-right: 150px;
-  font-family: 'Lato', serif;
-  font-size: xx-large;
-}
-
 .contact {
   color: blue;
   margin-left: 150px;
@@ -195,7 +188,8 @@ form {
 
 .translate:hover{
   color: white;
-  background-color:rgb(83, 66, 156)
+  background-color:rgb(83, 66, 156);
+  border-radius: 0%;
 }
 
 a {
@@ -204,6 +198,7 @@ a {
 
 a:hover {
   color: black;
+  border-radius: 0%;
 }
 
 .nextpagebutton {
@@ -222,6 +217,7 @@ a:hover {
 
 .nextpagebutton:hover {
   background-color: blue;
+  border-radius: 0%;
 }
 
 .seerah {
@@ -231,17 +227,33 @@ a:hover {
   background-color: rgb(2, 158, 255);
   border: none;
   height: 30px;
-  width: 170px;
+  width: 135px;
   border-radius: 15px;
   cursor: pointer;
   margin-bottom: 15px;
   text-align: justify;
+  margin-left: 250px;
 }
 
 .seerah:hover {
   color: maroon;
+  border-radius: 0%;
 }
-
+.fiqh {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: justify;
+}
+.fiqh:hover{
+  border-radius: 0%;
+}
 .quiz {
   color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -253,10 +265,12 @@ a:hover {
   border-radius: 15px;
   cursor: pointer;
   text-align: justify;
+ margin-right: 280px;
 }
-
 .quiz:hover {
   color: black;
+  border-radius: 0%;
+
 }
 
 .contact {
@@ -275,4 +289,5 @@ a:hover {
 
 .contact:hover {
   color: red;
+  border-radius: 0%;
 }
