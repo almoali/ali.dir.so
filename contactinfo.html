@@ -127,11 +127,24 @@
         margin-top: 12px;
       }
 
-      #submitbtn{
+      #submitbtn {
         background: transparent;
-        width: 30%;
+        width: 10%;
+        width: 167px;
       }
 
+      #firstname {
+        background: transparent;
+        width: 167px;
+        border-color: blue;
+
+      }
+
+      #lastname {
+        background: transparent;
+        width: 167px;
+        border-color: blue;
+      }
     </style>
   </head>
 
@@ -170,17 +183,17 @@
       <form style="margin-top: 20px;">
         <input type="text" id="firstname" placeholder="First Name: " required><br><br>
         <input type="text" id="lastname" placeholder="Last Name: " required><br><br>
-        <button onclick="alertfullname" id="submitbtn">Submit</button>
+        <button onclick="alertfullname()" id="submitbtn">Submit</button>
 
       </form>
     </div>
-<script>
-  function alertfullname () {
-    var firstname = document.getElementById("firstname").value;
-    var firstname = document.getElementById("firstname").value;
-    alert(firstname + " " + lastname)
-  }
-</script>
+    <script>
+      function alertfullname() {
+        var firstname = document.getElementById("firstname").value;
+        var firstname = document.getElementById("lastname").value;
+        alert("Welcome " + firstname + "" + lastname)
+      }
+    </script>
   </body>
 
 </html>
