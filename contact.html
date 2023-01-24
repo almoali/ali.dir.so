@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<center>
+
+  <head>
+    <style>
+      body {
+        background-color: tomato;
+      }
+
+      a {
+        color: red;
+
+      }
+
+      .email {
+        background-color: pink;
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      .email:hover {
+        color: rgb(2, 158, 255);
+      }
+
+      h1 {
+        background-color: pink;
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      p {
+        background-color: yellow;
+        color: blue;
+        font-family: 'Courier New', Courier, monospaces;
+      }
+
+      .HOMEPAGE {
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: x-large;
+        background-color: blue;
+        border: none;
+        height: 30px;
+        width: 180px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+
+      .quiz {
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: x-large;
+        background-color: blue;
+        border: none;
+        height: 30px;
+        width: 65px;
+        border-radius: 15px;
+        cursor: pointer;
+        text-align: justify;
+      }
+
+      .seerah {
+        color: rgb(2, 158, 255);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: x-large;
+        background-color: blue;
+        border: none;
+        height: 30px;
+        width: 150px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      .buttonforinfo {
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .buttonforinfo:hover {
+        background-color: blue;
+      }
+
+      .email-link {
+        text-decoration: none;
+        color: black;
+        display: inline-flex;
+        align-items: center;
+        padding: 9px 8px;
+        margin-left: -8px;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: border-color 0.15s cubic-bezier(0.4, 0, 1, 1);
+      }
+
+      .blabla2:hover {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        color: black;
+        height: 222px;
+        border-radius: 2px;
+        cursor: pointer;
+        display: block;
+        height: 73px;
+        padding: 10px;
+
+      }
+
+      .blabla2 {
+        display: block;
+        height: 73px;
+        padding: 10px;
+      }
+
+      .gmail-icon2 {
+        margin-top: 12px;
+      }
+
+      #submitbtn {
+        background: transparent;
+        width: 10%;
+        width: 167px;
+      }
+
+      #firstname {
+        background: transparent;
+        width: 167px;
+        border-color: blue;
+
+      }
+
+      #lastname {
+        background: transparent;
+        width: 167px;
+        border-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <title>Contact Us</title>
+
+
+    <!--QUIZ WEBPAGE-->
+    <div>
+      <nav>
+        <ul class="quiz">
+          <li><a href="quizislam.html">Quiz</a></li>
+        </ul>
+      </nav>
+      <!--HOME WEBPAGE-->
+      <nav class="HOMEPAGE">
+        <a href="index.html">THE HOMEPAGE</a>
+      </nav>
+
+      <!--SEERAH WEBPGAE-->
+      <nav class="seerah">
+        <a href="seerasaw.html">SEERAH:</a>
+      </nav>
+    </div>
+
+    <h1><b><u>Contact Us</b></u></h1>
+    <p>Hello again, If you have any questions about ISLAM <br><b>don't hesitate to Email us at.</b></p>
+    <div style="display: inline-block;">
+      <a href="mailto:admin@ali.dir.so" class="blabla2">
+
+        <img class="gmail-icon2" src="/Gmail.max-1100x1100.ico" alt="email icon">
+        <div>admin@ali.dir.so</div>
+      </a>
+    </div>
+    <div>
+      <form style="margin-top: 20px;">
+        <input type="text" id="firstname" placeholder="First Name: " required><br><br>
+        <input type="text" id="lastname" placeholder="Last Name: " required><br><br>
+        <button onclick="alertfullname()" id="submitbtn">Submit</button>
+
+      </form>
+    </div>
+    <script>
+      function alertfullname() {
+        var firstname = document.getElementById("firstname").value;
+        var firstname = document.getElementById("lastnam e").value;
+        alert("Welcome " + firstname + "" + lastname)
+      }
+    </script>
+  </body>
+
+</html>
