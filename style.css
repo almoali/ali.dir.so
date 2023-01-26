@@ -1,7 +1,11 @@
 body {
   background-color: tomato;
   font-family: 'Lato', serif;
+  zoom: 1.2; /* sets the zoom level to 120% */
+  overflow: scroll /* enables scrolling when the zoomed content is too large for the viewport */
+  -ms-touch-action pinch-zoom;/* enables pinch-to-zoom on touch devices */
 }
+
 
 h1 {
   color: blue;
