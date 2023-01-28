@@ -1,11 +1,7 @@
 body {
   background-color: tomato;
   font-family: 'Lato', serif;
-  zoom: 1.2; /* sets the zoom level to 120% */
-  overflow: scroll /* enables scrolling when the zoomed content is too large for the viewport */
-  -ms-touch-action pinch-zoom;/* enables pinch-to-zoom on touch devices */
 }
-
 
 h1 {
   color: blue;
@@ -28,7 +24,7 @@ h1 {
   scroll-behavior: smooth;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -176,7 +172,7 @@ form {
 
 }
 
-.translate{
+.translate {
   color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: x-large;
@@ -190,9 +186,9 @@ form {
   text-align: center;
 }
 
-.translate:hover{
+.translate:hover {
   color: white;
-  background-color:rgb(83, 66, 156);
+  background-color: rgb(83, 66, 156);
   border-radius: 0%;
 }
 
@@ -243,6 +239,7 @@ a:hover {
   color: maroon;
   border-radius: 0%;
 }
+
 .fiqh {
   color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -255,9 +252,11 @@ a:hover {
   cursor: pointer;
   text-align: justify;
 }
-.fiqh:hover{
+
+.fiqh:hover {
   border-radius: 0%;
 }
+
 .quiz {
   color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -269,8 +268,9 @@ a:hover {
   border-radius: 15px;
   cursor: pointer;
   text-align: justify;
- margin-right: 280px;
+  margin-right: 280px;
 }
+
 .quiz:hover {
   color: black;
   border-radius: 0%;

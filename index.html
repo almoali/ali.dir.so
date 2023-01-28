@@ -5,8 +5,36 @@
     <head>
         <meta charset="utf-8">
         <title>About Islam: Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!--SEERAH WEBPGAE-->
+        <nav class="seerah">
+            <ul>
+                <li><a href="seerah.html">SEERAH</a></li>
+            </ul>
+        </nav>
+        <!--FEQH WEBPAGE-->
+        <nav class="fiqh">
+            <ul>
+                <li><a href="feqh.html">FEQH</a></li>
+            </ul>
+        </nav>
+        <!--QUIZ WEBPAGE-->
+        <div class="wobble" class="pulse" class="slide-in">
+            <nav>
+                <ul class="quiz">
+                    <li><a href="quiz.html">QUIZ!</a></li>
+                </ul>
 
+        </div>
+
+        </nav>
+        <!--CONTACT WEBPAGE-->
+        <nav class="contact">
+            <ul>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet'
             type='text/css'>
         <audio src="sounds/audioforfirst.mp3" autoplay></audio>
@@ -40,7 +68,18 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <script>
+            const menuBtn = document.getElementById("menu-btn");
+            const menuList = document.getElementById("menu-list");
 
+            menuBtn.addEventListener("click", function () {
+                if (menuList.style.display === "none") {
+                    menuList.style.display = "block";
+                } else {
+                    menuList.style.display = "none";
+                }
+            });
+        </script>
         <h1>ISLAM:</h1>
 
     </head>
@@ -447,11 +486,7 @@
                 <nav class="translate">
                     <a href="translationaudio.html">Translation Audio</a>
                 </nav>
-                <script>
-                    function nextpage() {
 
-                    }
-                </script>
                 <a class="nextpagebutton" href="seerah.html">
                     Next Page
                 </a>
