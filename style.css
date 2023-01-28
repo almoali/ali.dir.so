@@ -233,6 +233,7 @@ a:hover {
   margin-bottom: 15px;
   text-align: justify;
   margin-left: 250px;
+  
 }
 
 .seerah:hover {
@@ -251,6 +252,7 @@ a:hover {
   border-radius: 15px;
   cursor: pointer;
   text-align: justify;
+  
 }
 
 .fiqh:hover {
@@ -268,7 +270,7 @@ a:hover {
   border-radius: 15px;
   cursor: pointer;
   text-align: justify;
-  margin-right: 280px;
+  
 }
 
 .quiz:hover {
@@ -284,11 +286,15 @@ a:hover {
   background-color: rgb(2, 158, 255);
   border: none;
   height: 30px;
-  width: 130px;
+  width: 170px;
   border-radius: 15px;
   cursor: pointer;
   margin-top: 20px;
   text-align: justify;
+ ,
+ ,
+
+ ,
 }
 
 .contact:hover {
