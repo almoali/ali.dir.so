@@ -1,0 +1,141 @@
+body {
+    background-color: tomato;
+  }
+
+  a {
+    color: red;
+
+  }
+
+  .email {
+    background-color: pink;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .email:hover {
+    color: rgb(2, 158, 255);
+  }
+
+  h1 {
+    background-color: pink;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  p {
+    background-color: yellow;
+    color: blue;
+    font-family: 'Courier New', Courier, monospaces;
+  }
+
+  .HOMEPAGE {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    background-color: blue;
+    border: none;
+    height: 30px;
+    width: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .quiz {
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    background-color: blue;
+    border: none;
+    height: 30px;
+    width: 65px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: justify;
+  }
+
+  .seerah {
+    color: rgb(2, 158, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    background-color: blue;
+    border: none;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .buttonforinfo {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .buttonforinfo:hover {
+    background-color: blue;
+  }
+
+  .email-link {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 8px;
+    margin-left: -8px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: border-color 0.15s cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  .blabla2:hover {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    height: 222px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+    height: 73px;
+    padding: 10px;
+
+  }
+
+  .blabla2 {
+    display: block;
+    height: 73px;
+    padding: 10px;
+  }
+
+  .gmail-icon2 {
+    margin-top: 12px;
+  }
+
+  #submitbtn {
+    background: transparent;
+    width: 10%;
+    width: 167px;
+  }
+
+  #firstname {
+    background: transparent;
+    width: 167px;
+    border-color: blue;
+
+  }
+
+  #lastname {
+    background: transparent;
+    width: 167px;
+    border-color: blue;
+  }
