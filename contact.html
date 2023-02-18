@@ -146,6 +146,41 @@
         width: 167px;
         border-color: blue;
       }
+
+      .timer {
+        font-size: 55px;
+        color: blue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      .days {
+        border-style: solid;
+      }
+
+      .hours {
+        border-style: solid;
+      }
+
+      .minutes {
+        border-style: solid;
+      }
+
+      .seconds {
+        border-style: solid;
+      }
+
+      .timer-header {
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+      .everthing-on-timer{
+        border-style: solid;
+        border-color: blue;
+      }
     </style>
   </head>
 
@@ -165,17 +200,19 @@
       <form style="margin-top: 20px;">
         <input type="text" id="firstname" placeholder="First Name: " required><br><br>
         <input type="text" id="lastname" placeholder="Last Name: " required><br><br>
-        <button onclick="alertfullname()" id="submitbtn">Submit</button>
-
+        <button onclick="alertfullname()" id="submitbtn">Submit</button><br><br><br>
       </form>
-    </div>
-    <script>
-      function alertfullname() {
-        var firstname = document.getElementById("firstname").value;
-        var firstname = document.getElementById("lastnam e").value;
-        alert("Welcome " + firstname + "" + lastname)
-      }
-    </script>
+      <div class="everthing-on-timer">
+        <h1 class="timer-header">Ramadan Countdown</h1>
+        <div class="timer">
+          <span class="days"></span>
+          <span class="hours"></span>
+          <span class="minutes"></span>
+          <span class="seconds"></span>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
   </body>
 
 </html>
