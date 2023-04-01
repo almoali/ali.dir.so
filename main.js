@@ -1,6 +1,6 @@
 // The fist day of ramadan
 
-let countDownDate = new Date("Mar 23, 2023 04:50:00").getTime();
+let countDownDate = new Date("Apr 20, 2023 00:00:00").getTime();
 
 
 let counter = setInterval(() => {

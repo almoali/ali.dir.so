@@ -1,5 +1,130 @@
+.featured-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.featured-lesson1 {
+  width: 115px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson2 {
+  width: 115px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -83px;
+}
+
+.featured-lesson3 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson4 {
+  width: 500px;
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -78px;
+}
+
+.featured-lesson5 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson6 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -98px;
+}
+
+.featured-lesson7 {
+  width: 125px;
+  padding: 15pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+
+}
+
+.featured-lesson8 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -70px;
+}
+
+.header {
+  font-size: 2em;
+  /* sets the font size to 2 times the parent element's font size */
+  font-weight: bold;
+  /* sets the font weight to bold */
+}
+.introduction{
+  font-size: large;
+  border-style: dashed;
+  border-color:tomato;
+}
+
 body {
-  background-color: tomato;
+  background-color:tomato;
   font-family: 'Lato', serif;
 }
 
@@ -29,7 +154,7 @@ html {
 }
 
 h1 {
-  background-color: pink;
+  background-color: red;
   font-family: 'Lato', serif;
   font-weight: 900;
 
