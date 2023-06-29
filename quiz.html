@@ -197,42 +197,9 @@
     </div>
   </div>
   <button onclick="submitQuiz()">Submit</button>
-
+  
   </center>
   
-<script>
-  // Function to handle quiz submission
-  function submitQuiz() {
-    const score = calculateScore();
-
-    if (score === 5) {
-      alert("Congratulations! You passed the quiz!");
-    } else {
-      alert("Sorry, you did not pass the quiz. Please try again.");
-    }
-  }
-
-  // Function to calculate the quiz score
-  function calculateScore() {
-    let score = 0;
-
-    const selectedAnswers = [
-      document.querySelector('input[name="answer1"]:checked'),
-      document.querySelector('input[name="answer2"]:checked'),
-      document.querySelector('input[name="answer3"]:checked'),
-      document.querySelector('input[name="answer4"]:checked'),
-      document.querySelector('input[name="answer5"]:checked')
-    ];
-
-    selectedAnswers.forEach((answer) => {
-      if (answer && answer.value === "Muhammad" || answer.value === "Quran" || answer.value === "Hajj" || answer.value === "5" || answer.value === "Ramadan") {
-        score++;
-      }
-    });
-
-    return score;
-  }
-</script>
 
 </body>
 
