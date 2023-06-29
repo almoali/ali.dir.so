@@ -12,7 +12,9 @@ h1 {
     text-align: center;
 
 }
-
+.smtthatdeserveschanges{
+    
+}
 h2 {
     color: rgb(0, 0, 105);
     background-color: pink;
@@ -29,10 +31,15 @@ h3 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 105);
+    background-color: pink;
+
 }
 
 ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 105);
+    background-color: pink;
 }
 
 .homepage {
@@ -57,4 +64,6 @@ ol {
 
 .wisdom {
     text-align: justify;
+    text-align: center;
+
 }

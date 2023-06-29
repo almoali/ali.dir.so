@@ -119,7 +119,8 @@
       background-color: rgb(2, 158, 255);
       color: white;
       border: none;
-      width: 74px;
+      font-size: large;
+      width: 100px;
       border-radius: 15px;
       font-weight: bold;
       font-size: 15px;
@@ -142,62 +143,96 @@
   <center>
 
 
-    <h5 class="prog">QUIZ IS STILL IN PROGRESS,<br>
-      THIS MAY TAKE TIME!!
+    <h5 class="prog">QUIZ STILL IN PROGRESS,<br>
+      THIS MAY TAKE TIME!!!
     </h5>
 
     <div class="bounce" class="wobble" class="pulse" class="slide-in">
-      <h1>Islam Quiz</h1>
-      <form id="quiz-form">
-        <p>What is the meaning of the word "Islam"?</p>
-        <input type="radio" name="q1" value="a"> Submission to God<br>
-        <input type="radio" name="q1" value="b"> Peace<br>
-        <input type="radio" name="q1" value="c"> Love<br>
-        <input type="radio" name="q1" value="d"> Faith<br>
-        <input type="radio" name="q1" value="e"> All of Above<br>
-
-        <p>How many pillars of Islam are there?</p>
-        <input type="radio" name="q2" value="a"> 3<br>
-        <input type="radio" name="q2" value="b"> 4<br>
-        <input type="radio" name="q2" value="c"> 5<br>
-        <input type="radio" name="q2" value="d"> 6<br>
-
-        <button onclick="submit-quiz" class="submitquiz" type="submit">Submit Quiz</button><br><br><br>
-        <a class="lastpagebutton" href="index.html">
-          Return To HOMEPAGE
-        </a>
-
-      </form>
-
+      <h1>Islamic Quiz</h1>
+  <div id="quiz">
+    <div id="question1" class="question">
+      <p>Who is considered the final prophet in Islam?</p>
+      <ul>
+        <li><input type="radio" name="answer1" value="Muhammad"> Muhammad</li>
+        <li><input type="radio" name="answer1" value="Moses"> Moses</li>
+        <li><input type="radio" name="answer1" value="Jesus"> Jesus</li>
+        <li><input type="radio" name="answer1" value="Abraham"> Abraham</li>
+      </ul>
+    </div>
+    <div id="question2" class="question">
+      <p>What is the name of the holy book of Islam?</p>
+      <ul>
+        <li><input type="radio" name="answer2" value="Quran"> Quran</li>
+        <li><input type="radio" name="answer2" value="Bible"> Bible</li>
+        <li><input type="radio" name="answer2" value="Torah"> Torah</li>
+        <li><input type="radio" name="answer2" value="Vedas"> Vedas</li>
+      </ul>
+    </div>
+    <div id="question3" class="question">
+      <p>What is the pilgrimage to Mecca called in Islam?</p>
+      <ul>
+        <li><input type="radio" name="answer3" value="Umrah"> Umrah</li>
+        <li><input type="radio" name="answer3" value="Hajj"> Hajj</li>
+        <li><input type="radio" name="answer3" value="Zakat"> Zakat</li>
+        <li><input type="radio" name="answer3" value="Salah"> Salah</li>
+      </ul>
+    </div>
+    <div id="question4" class="question">
+      <p>How many times a day do Muslims perform the mandatory prayer?</p>
+      <ul>
+        <li><input type="radio" name="answer4" value="1"> 1</li>
+        <li><input type="radio" name="answer4" value="3"> 3</li>
+        <li><input type="radio" name="answer4" value="5"> 5</li>
+        <li><input type="radio" name="answer4" value="7"> 7</li>
+      </ul>
+    </div>
+    <div id="question5" class="question">
+      <p>What is the name of the month of fasting in Islam?</p>
+      <ul>
+        <li><input type="radio" name="answer5" value="Eid"> Eid</li>
+        <li><input type="radio" name="answer5" value="Hijri"> Hijri</li>
+        <li><input type="radio" name="answer5" value="Ramadan"> Ramadan</li>
+        <li><input type="radio" name="answer5" value="Muharram"> Muharram</li>
+      </ul>
+    </div>
+  </div>
+  <button onclick="submitQuiz()">Submit</button>
 
   </center>
-  <script>
-    const form = document.getElementById("quiz-form");
-    function check(event) {
-      event.preventDefault();
-      event.stopPropagation();
-      var score = 0;
+  
+<script>
+  // Function to handle quiz submission
+  function submitQuiz() {
+    const score = calculateScore();
 
-      // Check answers
-      if (form.elements.q1.value === "e") {
-        score++;
-      }
-      if (form.elements.q2.value === "c") {
-        score++;
-      }
-
-      // Show result
-      if (score === e) {
-        alert("Congratulations, you passed the quiz!");
-
-      }
-      else {
-        alert("Sorry, you failed the quiz. Better luck next time!");
-      }
+    if (score === 5) {
+      alert("Congratulations! You passed the quiz!");
+    } else {
+      alert("Sorry, you did not pass the quiz. Please try again.");
     }
+  }
 
-    form.addEventListener("submit", check )
-  </script>
+  // Function to calculate the quiz score
+  function calculateScore() {
+    let score = 0;
+
+    const selectedAnswers = [
+      document.querySelector('input[name="answer1"]:checked'),
+      document.querySelector('input[name="answer2"]:checked'),
+      document.querySelector('input[name="answer3"]:checked'),
+      document.querySelector('input[name="answer4"]:checked'),
+      document.querySelector('input[name="answer5"]:checked')
+    ];
+
+    selectedAnswers.forEach((answer) => {
+      if (answer && answer.value === "Muhammad" || answer.value === "Quran" || answer.value === "Hajj" || answer.value === "5" || answer.value === "Ramadan") {
+        score++;
+      }
+    });
+
+    return score;
+  }
+</script>
 
 </body>
 

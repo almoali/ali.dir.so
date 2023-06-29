@@ -43,7 +43,8 @@ body {
   p {
     color: blue;
     background-color: pink;
-  
+    font-size: large;
+    font: bold;
     font-family: 'Lato', serif;
   }
   

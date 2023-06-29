@@ -7,7 +7,10 @@ body {
     color: blue;
     font-family: 'Lato', serif;
   }
-  
+  span{
+    color: blue;
+  }
+
   .islamic-info {
     background-color: pink;
   }
