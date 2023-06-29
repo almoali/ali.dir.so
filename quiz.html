@@ -201,18 +201,26 @@
   <script>
     // Function to handle quiz submission
     function submitQuiz() {
-      const score = calculateScore();
+      const incorrectAnswers = findIncorrectAnswers();
+      const score = 5 - incorrectAnswers.length;
   
       if (score === 5) {
         alert("Congratulations! You passed the quiz!");
       } else {
-        alert("Sorry, you did not pass the quiz. Please try again.");
+        let message = `Sorry, you did not pass the quiz. You got ${score} out of 5 questions correct.\n\n`;
+        message += "You answered the following questions incorrectly:\n";
+  
+        incorrectAnswers.forEach((questionNumber) => {
+          message += `- Question ${questionNumber}\n`;
+        });
+  
+        alert(message);
       }
     }
   
-    // Function to calculate the quiz score
-    function calculateScore() {
-      let score = 0;
+    // Function to find the incorrect answers
+    function findIncorrectAnswers() {
+      const incorrectAnswers = [];
   
       const selectedAnswers = [
         document.querySelector('input[name="answer1"]:checked'),
@@ -222,13 +230,43 @@
         document.querySelector('input[name="answer5"]:checked')
       ];
   
-      selectedAnswers.forEach((answer) => {
-        if (answer && answer.value === "Muhammad" || answer.value === "Quran" || answer.value === "Hajj" || answer.value === "5" || answer.value === "Ramadan") {
-          score++;
+      selectedAnswers.forEach((answer, index) => {
+        const questionNumber = index + 1;
+        const correctAnswer = getCorrectAnswer(questionNumber);
+        
+        if (!answer || answer.value !== correctAnswer) {
+          incorrectAnswers.push(questionNumber);
         }
       });
   
-      return score;
+      return incorrectAnswers;
+    }
+  
+    // Function to get the correct answer for a question
+    function getCorrectAnswer(questionNumber) {
+      let correctAnswer;
+      
+      switch (questionNumber) {
+        case 1:
+          correctAnswer = "Muhammad";
+          break;
+        case 2:
+          correctAnswer = "Quran";
+          break;
+        case 3:
+          correctAnswer = "Hajj";
+          break;
+        case 4:
+          correctAnswer = "5";
+          break;
+        case 5:
+          correctAnswer = "Ramadan";
+          break;
+        default:
+          break;
+      }
+      
+      return correctAnswer;
     }
   </script>
   
