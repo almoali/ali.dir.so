@@ -176,10 +176,12 @@ form {
 a {
   border-radius: 5px;
 }
-.MOREINFO{
+
+.MOREINFO {
   font-size: x-large;
   text-align: center;
 }
+
 a:hover {
   color: black;
 }
@@ -197,8 +199,6 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   margin-left: 45%;
-  margin-top: 65%;
-  align-items: center;
 }
 
 
@@ -239,17 +239,15 @@ a:hover {
 
 .informationaboutka3ba1 {
   font-size: 160%;
-  margin-left: 46%;
 }
 
 .imageofka3ba {
-  max-width: 45%;
+
   height: 450px;
   display: block;
   margin: 0 auto;
-  margin-left: 0%;
   size: 10%;
-  margin-top: -90%;
+  align-items: center;
 }
 
 .fiqh:hover {
