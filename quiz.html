@@ -86,6 +86,24 @@
       text-align: justify;
     }
 
+    .nextpagebutton {
+      background-color: rgb(2, 158, 255);
+      color: white;
+      border: none;
+      width: 74px;
+      border-radius: 15px;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 10px;
+      margin: 10px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .nextpagebutton:hover {
+      color: black;
+    }
+
     a:hover {
       color: maroon;
     }
@@ -135,12 +153,16 @@
     button:hover {
       background-color: red;
     }
+
+    .sizechange {
+      font-size: x-large;
+    }
   </style>
 </head>
 
 <body>
 
-  <center>
+  <center class="sizechange">
 
 
     <h5 class="prog">QUIZ IS WORKING <br> TRY IT AND HAVE A NICE TIME TAKING THE QUIZ<br>
@@ -167,7 +189,7 @@
     <div id="question3" class="question">
       <p>What is the pilgrimage to Mecca called in Islam?</p>
       <ul>
-        <li><input type="radio" name="answer3" value="Umrah"> Umrah</li>
+        <li><input type="radio" name="answer3" value="Umrah"> Rajab</li>
         <li><input type="radio" name="answer3" value="Hajj"> Hajj</li>
         <li><input type="radio" name="answer3" value="Zakat"> Zakat</li>
         <li><input type="radio" name="answer3" value="Salah"> Salah</li>
@@ -191,37 +213,39 @@
         <li><input type="radio" name="answer5" value="Muharram"> Muharram</li>
       </ul>
     </div>
-  </div>
-  <button onclick="submitQuiz()">Submit</button>
-  
+    </div>
+    <button onclick="submitQuiz()">Submit</button>
 
+    <a class="nextpagebutton" href="index.html">
+      Return To Home
+    </a>
 
   </center>
-  
+
   <script>
     // Function to handle quiz submission
     function submitQuiz() {
       const incorrectAnswers = findIncorrectAnswers();
       const score = 5 - incorrectAnswers.length;
-  
+
       if (score === 5) {
         alert("Congratulations! You passed the quiz!");
       } else {
         let message = `Sorry, you did not pass the quiz. You got ${score} out of 5 questions correct.\n\n`;
         message += "You answered the following questions incorrectly:\n";
-  
+
         incorrectAnswers.forEach((questionNumber) => {
           message += `- Question ${questionNumber}\n`;
         });
-  
+
         alert(message);
       }
     }
-  
+
     // Function to find the incorrect answers
     function findIncorrectAnswers() {
       const incorrectAnswers = [];
-  
+
       const selectedAnswers = [
         document.querySelector('input[name="answer1"]:checked'),
         document.querySelector('input[name="answer2"]:checked'),
@@ -229,23 +253,23 @@
         document.querySelector('input[name="answer4"]:checked'),
         document.querySelector('input[name="answer5"]:checked')
       ];
-  
+
       selectedAnswers.forEach((answer, index) => {
         const questionNumber = index + 1;
         const correctAnswer = getCorrectAnswer(questionNumber);
-        
+
         if (!answer || answer.value !== correctAnswer) {
           incorrectAnswers.push(questionNumber);
         }
       });
-  
+
       return incorrectAnswers;
     }
-  
+
     // Function to get the correct answer for a question
     function getCorrectAnswer(questionNumber) {
       let correctAnswer;
-      
+
       switch (questionNumber) {
         case 1:
           correctAnswer = "Muhammad";
@@ -265,11 +289,11 @@
         default:
           break;
       }
-      
+
       return correctAnswer;
     }
   </script>
-  
+
 
 </body>
 

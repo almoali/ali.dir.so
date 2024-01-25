@@ -37,12 +37,14 @@ h1 {
   background-color: pink;
   font-family: 'Lato', serif;
   font-weight: 900;
+  font-size: 230%;
 
 }
 
 .quranrec {
   background-color: pink;
   font: bold;
+  font-size: 230%;
 }
 
 p {
@@ -55,14 +57,14 @@ p {
 .bigqu2 {
   font-size: 18px;
   background-color: yellow;
-
+  font-size: 150%;
   font-family: 'Lato', serif;
 }
 
 .bigqu1 {
   font-size: 18px;
   background-color: yellow;
-
+  font-size: 150%;
   font-family: 'Lato', serif;
 }
 
@@ -78,7 +80,7 @@ p {
   color: rgb(4, 48, 49);
   background-color: rgb(209, 160, 255);
   text-align: center;
-
+  font-size: x-large
 }
 
 
@@ -203,17 +205,16 @@ a {
 
 a:hover {
   color: black;
-  border-radius: 0%;
 }
 
 .nextpagebutton {
   background-color: rgb(2, 158, 255);
   color: white;
   border: none;
-  width: 74px;
+  width: 110px;
   border-radius: 15px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
@@ -221,8 +222,8 @@ a:hover {
 }
 
 .nextpagebutton:hover {
-  background-color: blue;
-  border-radius: 0%;
+  background-color: ;
+  border-radius: ;
 }
 
 .seerah {
@@ -243,7 +244,6 @@ a:hover {
 
 .seerah:hover {
   color: maroon;
-  border-radius: 0%;
 }
 
 .fiqh {

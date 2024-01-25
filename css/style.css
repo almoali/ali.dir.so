@@ -1,6 +1,153 @@
+.featured-jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: xx-large;
+}
+
+.featured-lesson1 {
+  width: 115px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson2 {
+  width: 115px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -83px;
+  margin-top: -3%;
+}
+
+.featured-lesson3 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson4 {
+  width: 500px;
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -78px;
+  margin-top: -3%;
+}
+
+.featured-lesson5 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+}
+
+.featured-lesson6 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -98px;
+  margin-top: -6%;
+}
+
+.featured-lesson7 {
+  width: 125px;
+  padding: 15pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-right: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+
+}
+
+.featured-lesson8 {
+  width: 125px;
+  padding: 10pt;
+  margin: 20px;
+  border: 1px solid #ccc;
+  margin-left: 55%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: black;
+  position: relative;
+  top: -70px;
+  margin-top: -5%;
+}
+.all-featuredlessons{
+  font-size: x-large;
+  width: 60%;
+  margin: 0%;
+}
+.header {
+  font-size: 2em;
+  /* sets the font size to 2 times the parent element's font size */
+  font-weight: bold;
+  /* sets the font weight to bold */
+}
+
+.introduction {
+  font-size: 130%;
+  border-style: dashed;
+  border-color: tomato;
+}
+
+.introduction2 {
+  font-size: 130%;
+
+}
+
 body {
   background-color: tomato;
   font-family: 'Lato', serif;
+}
+
+.imageofka3ba {
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -23,18 +170,13 @@ h1 {
   font-weight: 900;
   scroll-behavior: smooth;
 }
-.isimih{
-  font-size: x-large;
-}
-.isimih2{
-  font-size: 255%;
-}
+
 html {
   scroll-behavior: smooth;
 }
 
 h1 {
-  background-color: pink;
+  background-color: red;
   font-family: 'Lato', serif;
   font-weight: 900;
 
@@ -43,13 +185,6 @@ h1 {
 .quranrec {
   background-color: pink;
   font: bold;
-}
-
-.pillarsinfo {
-  color: blue;
-  background-color: pink;
-  font-family: 'Lato', serif;
-  font-size: x-large;
 }
 
 p {
@@ -102,14 +237,7 @@ p {
   color: indigo;
   background-color: pink;
   font-family: 'Lato', serif;
-  font-size: x-large;
 
-}
-
-ol {
-  color: indigo;
-  background-color: pink;
-  font-family: 'Lato', serif;
 }
 
 .islamic-info1 {
@@ -211,12 +339,13 @@ form {
   border-radius: 0%;
 }
 
-.pill{
-  font-size: x-large;
+a {
+  border-radius: 5px;
 }
 
 a:hover {
   color: black;
+  border-radius: 0%;
 }
 
 .nextpagebutton {
@@ -233,6 +362,10 @@ a:hover {
   display: inline-block;
 }
 
+.nextpagebutton:hover {
+  background-color: blue;
+  border-radius: 0%;
+}
 
 .seerah {
   color: blue;

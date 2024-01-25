@@ -7,57 +7,61 @@ body {
 }
 
 h1 {
-    color: rgb(0, 0, 105);
+    color: blue;
     background-color: pink;
     text-align: center;
+    font-size: xx-large;
 
 }
 
 h2 {
-    color: rgb(0, 0, 105);
+    color: blue;
     background-color: pink;
     text-align: center;
     margin-top: 50px;
+    font-size: xx-large;
 }
 
 h3 {
-    color: rgb(0, 0, 105);
+    color: blue;
     background-color: pink;
     text-align: center;
+    font-size: xx-large;
 
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 105);
+    color: blue;
     background-color: pink;
+    font-size: large;
 
 }
 
 ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 105);
+    color: blue;
     background-color: pink;
+    font-size: large
 }
 
 .homepage {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
     background-color: rgb(2, 158, 255);
+    color:white;
     border: none;
-    height: 30px;
-    width: 250px;
+    width: 85px;
     border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    text-align: center;
-    margin-bottom: 55px;
-    margin-left: 110px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+
 }
 
 .homepage:hover {
-    border-radius: 0%;
+    color: black;
 }
 
 .wisdom {

@@ -4,21 +4,21 @@ body {
 
 h1 {
     color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: aliceblue;
+    font-family: 'Lato', serif;
+    background-color: pink;
 }
 
 p {
     color: blue;
     background-color: pink;
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 175%;
 }
 
 h4 {
-    color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: aliceblue;
+    color: blue;
+    background-color: pink;
+    font-family: 'Lato', serif;
 
 }
 

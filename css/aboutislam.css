@@ -172,7 +172,10 @@ body {
     font-size: xx-large;
   
   }
-  
+.AboutIslam{
+  font-size: x-large;
+  text-align: center;
+}
   .translate {
     color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -199,7 +202,7 @@ body {
   
   a:hover {
     color: black;
-    border-radius: 0%;
+
   }
   
   .nextpagebutton {
@@ -216,10 +219,8 @@ body {
     display: inline-block;
   }
   
-  .nextpagebutton:hover {
-    background-color: blue;
-    border-radius: 0%;
-  }
+
+  
   
   .seerah {
     color: blue;
