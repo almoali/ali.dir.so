@@ -1,3 +1,13 @@
+.container{
+  flex-direction: row;
+}
+
+@media (max-width: 600px) { 
+  .container {
+    flex-direction: column;
+  }
+}
+
 .featured-jobs {
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +25,7 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-color: black;
+  font-size:x-large ;
 }
 
 .featured-lesson2 {
@@ -30,7 +41,7 @@
   border-color: black;
   position: relative;
   top: -83px;
-  margin-top: -3%;
+  font-size:x-large ;
 }
 
 .featured-lesson3 {
@@ -43,6 +54,7 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-color: black;
+  font-size:x-large ;
 }
 
 .featured-lesson4 {
@@ -58,7 +70,8 @@
   border-color: black;
   position: relative;
   top: -78px;
-  margin-top: -3%;
+  margin-top: -4%;
+  font-size:x-large ;
 }
 
 .featured-lesson5 {
@@ -71,6 +84,7 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-color: black;
+  font-size:x-large ;
 }
 
 .featured-lesson6 {
@@ -85,7 +99,8 @@
   border-color: black;
   position: relative;
   top: -98px;
-  margin-top: -6%;
+  margin-top: -4%;
+  font-size:x-large ;
 }
 
 .featured-lesson7 {
@@ -98,6 +113,7 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-color: black;
+  font-size:x-large ;
 
 }
 
@@ -113,7 +129,7 @@
   border-color: black;
   position: relative;
   top: -70px;
-  margin-top: -5%;
+  font-size:x-large ;
 }
 .all-featuredlessons{
   font-size: x-large;
