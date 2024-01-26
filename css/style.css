@@ -146,7 +146,6 @@
 .introduction {
   font-size: 130%;
   border-style: dashed;
-  border-color: tomato;
 }
 
 .introduction2 {
@@ -155,12 +154,12 @@
 }
 
 body {
-  background-color: tomato;
+  background-color: #ffd8b1;
   font-family: 'Lato', serif;
 }
 
 h1 {
-  color: blue;
+  color: black;
   font-family: 'Lato', serif;
 }
 html {
@@ -175,9 +174,8 @@ h1 {
 }
 
 p {
-  color: blue;
-  background-color: pink;
-
+  color: black;
+  
   font-family: 'Lato', serif;
 }
 

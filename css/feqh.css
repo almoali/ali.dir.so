@@ -3,28 +3,31 @@ html {
 }
 
 body {
-    background-color: tomato;
+    background-color: #ffd8b1;
 }
 
 h1 {
-    color: blue;
-    background-color: pink;
+    color: black;
+    background-color: #ffaf602f;
+    border-style: dashed;
     text-align: center;
     font-size: xx-large;
 
 }
 
 h2 {
-    color: blue;
-    background-color: pink;
+    color: black;
+    background-color: #ffaf602f;
+    border-style: dashed;
     text-align: center;
     margin-top: 50px;
     font-size: xx-large;
 }
 
 h3 {
-    color: blue;
-    background-color: pink;
+    color: black;
+    background-color: #ffaf602f;
+    border-style: dashed;
     text-align: center;
     font-size: xx-large;
 
@@ -32,24 +35,26 @@ h3 {
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
-    background-color: pink;
+    color: black;
+    background-color: #ffaf602f;
+    border-style: dashed;
     font-size: large;
 
 }
 
 ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
-    background-color: pink;
+    color: black;
+    background-color: #ffaf602f;
+    border-style: dashed;
     font-size: large
 }
 
 .homepage {
-    background-color: rgb(2, 158, 255);
-    color:white;
+    background-color: #ff8000;
+    color: white;
     border: none;
-    width: 85px;
+    width: 110px;
     border-radius: 15px;
     font-weight: bold;
     font-size: 20px;
@@ -60,7 +65,7 @@ ol {
 
 }
 
-.homepage:hover {
+a:hover {
     color: black;
 }
 

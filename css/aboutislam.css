@@ -1,301 +1,308 @@
 body {
-    background-color: tomato;
-    font-family: 'Lato', serif;
-  }
-  
-  h1 {
-    color: blue;
-    font-family: 'Lato', serif;
-  }
-  
-  .islamic-info {
-    background-color: pink;
-  }
-  
-  #islamic-pillars {
-    background-color: pink;
-    font-weight: 900;
-  }
-  
-  #islamic-iman {
-    background-color: pink;
-    font-family: 'Lato', serif;
-    font-weight: 900;
-    scroll-behavior: smooth;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  h1 {
-    background-color: pink;
-    font-family: 'Lato', serif;
-    font-weight: 900;
-  
-  }
-  
-  .quranrec {
-    background-color: pink;
-    font: bold;
-  }
-  
-  p {
-    color: blue;
-    background-color: pink;
-    font-size: large;
-    font: bold;
-    font-family: 'Lato', serif;
-  }
-  
-  .bigqu2 {
-    font-size: 18px;
-    background-color: yellow;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  .bigqu1 {
-    font-size: 18px;
-    background-color: yellow;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  #list {
-    color: rgb(83, 66, 156);
-    background-color: pink;
-    font-family: 'Lato', serif;
-    font-weight: 155;
-  
-  }
-  
-  .surahname {
-    color: rgb(4, 48, 49);
-    background-color: rgb(209, 160, 255);
-    text-align: center;
-  
-  }
-  
-  
-  #islamic-pillar {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Lato', serif;
-    scroll-behavior: smooth;
-  
-  
-  }
-  
-  .pillar-iman {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Lato', serif;
-  
-  }
-  
-  .islamic-info1 {
-    color: red;
-    background-color: yellow;
-    font-style: italic;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  .audiotest {
-    color: red;
-    background-color: yellow;
-  
-  }
-  
-  .islampillar {
-    color: indigo;
-    background-color: pink;
-    font-family: 'Lato', serif;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-  
-  #makkah {
-    width: 45%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .ka3baa {
-    color: red;
-    background-color: yellow;
-  
-    font-family: 'Lato', serif;
-  
-  }
-  
-  #thisisquran {
-    background-color: pink;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  h3 {
-    color: blue;
-    background-color: pink;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  h2 {
-    color: blue;
-    background-color: pink;
-  
-    font-family: 'Lato', serif;
-  }
-  
-  form {
-  
-    color: blue;
-    background-color: pink;
-    font-family: 'Lato', serif;
-  }
-  
-  .contact {
-    color: blue;
-    margin-left: 150px;
-    font-family: 'Lato', serif;
-    font-size: xx-large;
-  }
-  
-  .seerah {
-    color: blue;
-    margin-right: 150px;
-    font-family: 'Lato', serif;
-    font-size: xx-large;
-  
-  }
-.AboutIslam{
+  background-color: #ffd8b1;
+  font-family: 'Lato', serif;
+}
+
+h1 {
+  color: black;
+  font-family: 'Lato', serif;
+  border-style: dashed;
+}
+
+.islamic-info {
+  background-color: #ffaf602f;
+  border-style: dashed;
+}
+
+#islamic-pillars {
+  background-color: #ffaf602f;
+  font-weight: 900;
+  border-style: dashed;
+}
+
+#islamic-iman {
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  scroll-behavior: smooth;
+  border-style: dashed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  border-style: dashed;
+
+}
+
+.quranrec {
+  background-color: pink;
+  font: bold;
+  border-style: dashed;
+}
+
+p {
+  color: black;
+  background-color: #ffaf602f;
+  font-size: large;
+  font: bold;
+  font-family: 'Lato', serif;
+  border-style: dashed;
+}
+
+.bigqu2 {
+  font-size: 18px;
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+}
+
+.bigqu1 {
+  font-size: 18px;
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+}
+
+#list {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 155;
+
+}
+
+.surahname {
+  color: black;
+  background-color: #ffaf602f;
+  text-align: center;
+
+}
+
+
+#islamic-pillar {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  scroll-behavior: smooth;
+
+
+}
+
+.pillar-iman {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+
+}
+
+.islamic-info1 {
+  color: black;
+  background-color: #ffaf602f;
+  font-style: italic;
+
+  font-family: 'Lato', serif;
+}
+
+.audiotest {
+  color: black;
+  background-color: #ffaf602f;
+
+}
+
+.islampillar {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#makkah {
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ka3baa {
+  color: black;
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+
+}
+
+#thisisquran {
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+}
+
+h3 {
+  color: black;
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+}
+
+h2 {
+  color: black;
+  background-color: #ffaf602f;
+
+  font-family: 'Lato', serif;
+}
+
+form {
+
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+}
+
+.contact {
+  color: black;
+  margin-left: 150px;
+  font-family: 'Lato', serif;
+  font-size: xx-large;
+}
+
+.seerah {
+  color: black;
+  margin-right: 150px;
+  font-family: 'Lato', serif;
+  font-size: xx-large;
+
+}
+
+.AboutIslam {
   font-size: x-large;
   text-align: center;
 }
-  .translate {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 200px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  .translate:hover {
-    color: white;
-    background-color: rgb(83, 66, 156);
-    border-radius: 0%;
-  }
-  
-  a {
-    border-radius: 5px;
-  }
-  
-  a:hover {
-    color: black;
 
-  }
-  
-  .nextpagebutton {
-    background-color: rgb(2, 158, 255);
-    color: white;
-    border: none;
-    width: 74px;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
+.translate {
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-  
-  
-  .seerah {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 135px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-    text-align: justify;
-    margin-left: 250px;
-    
-  }
-  
-  .seerah:hover {
-    color: maroon;
-    border-radius: 0%;
-  }
-  
-  .fiqh {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 100px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: justify;
-    
-  }
-  
-  .fiqh:hover {
-    border-radius: 0%;
-  }
-  
-  .quiz {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 65px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: justify;
-    
-  }
-  
-  .quiz:hover {
-    color: black;
-    border-radius: 0%;
-  
-  }
-  
-  .contact {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 170px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-align: justify;
-  }
-  
-  .contact:hover {
-    color: red;
-    border-radius: 0%;
-  }
+.translate:hover {
+  color: white;
+  background-color: rgb(83, 66, 156);
+  border-radius: 0%;
+}
+
+a {
+  border-radius: 5px;
+}
+
+a:hover {
+  color: black;
+
+}
+
+.nextpagebutton {
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  width: 110px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.seerah {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 135px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-align: justify;
+  margin-left: 250px;
+
+}
+
+.seerah:hover {
+  color: maroon;
+  border-radius: 0%;
+}
+
+.fiqh {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: justify;
+
+}
+
+.fiqh:hover {
+  border-radius: 0%;
+}
+
+.quiz {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 65px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: justify;
+
+}
+
+.quiz:hover {
+  color: black;
+  border-radius: 0%;
+
+}
+
+.contact {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: rgb(2, 158, 255);
+  border: none;
+  height: 30px;
+  width: 170px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.contact:hover {
+  color: red;
+  border-radius: 0%;
+}

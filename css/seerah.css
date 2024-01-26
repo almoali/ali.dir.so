@@ -1,125 +1,48 @@
 body {
-    background-color: tomato;
+    background-color: #ffd8b1;
 }
 
 h1 {
-    color: blue;
+    color: black;
     font-family: 'Lato', serif;
-    background-color: pink;
+    background-color: #ffaf602f;
+    border-style: dashed;
 }
 
 p {
-    color: blue;
+    color: black;
     background-color: pink;
     font-family: 'Times New Roman', Times, serif;
     font-size: 175%;
+    background-color: #ffaf602f;
+    border-style: dashed;
 }
 
 h4 {
-    color: blue;
+    color: black;
     background-color: pink;
     font-family: 'Lato', serif;
-
+    background-color: #ffaf602f;
+    border-style: dashed;
 }
 
-#contactseerah {
-    color: red;
-    background-color: aliceblue;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.pulse {
-    animation: pulse 10s;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.pulse2 {
-    animation: pulse 10s;
-}
-
-.HOMEPAGE {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 180px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-}
-
-.quiz {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 65px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: justify;
-}
-
-.contact {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: rgb(2, 158, 255);
-    border: none;
-    height: 30px;
-    width: 150px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 20px;
-}
 
 a:hover {
-    color: maroon;
+    color: black;
 }
 
 .nextpagebutton {
-    background-color: rgb(2, 158, 255);
+    background-color: #ff8000;
     color: white;
     border: none;
-    width: 74px;
+    width: 110px;
     border-radius: 15px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     margin: 10px;
     text-decoration: none;
     display: inline-block;
-}
+  }
+  
 
-.nextpagebutton:hover {
-    background-color: blue;
-}

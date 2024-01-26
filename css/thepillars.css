@@ -1,97 +1,107 @@
 body {
-  background-color: tomato;
+  background-color: #ffd8b1;
   font-family: 'Lato', serif;
 }
 
 h1 {
-  color: blue;
+  color: black;
   font-family: 'Lato', serif;
+  border-style: dashed;
 }
 
 .islamic-info {
-  background-color: pink;
+  background-color: #ffaf602f;
+  border-style: dashed;
 }
 
 #islamic-pillars {
-  background-color: pink;
+  background-color: #ffaf602f;
   font-weight: 900;
+  border-style: dashed;
 }
 
 #islamic-iman {
-  background-color: pink;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-weight: 900;
   scroll-behavior: smooth;
+  border-style: dashed;
 }
-.isimih{
+
+.isimih {
   font-size: x-large;
+  border-style: dashed;
 }
-.isimih2{
+
+.isimih2 {
   font-size: 255%;
+  border-style: dashed;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 h1 {
-  background-color: pink;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-weight: 900;
-
+  border-style: dashed;
 }
 
 .quranrec {
-  background-color: pink;
+  background-color: #ffaf602f;
   font: bold;
 }
 
 .pillarsinfo {
-  color: blue;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-size: x-large;
+  border-style: dashed;
 }
 
 p {
-  color: blue;
-  background-color: pink;
-
+  color: black;
+  background-color: #ffaf602f;
+  border-style: dashed;
   font-family: 'Lato', serif;
 }
 
 .bigqu2 {
   font-size: 18px;
-  background-color: yellow;
-
+  background-color: #ffaf602f;
+  border-style: dashed;
   font-family: 'Lato', serif;
 }
 
 .bigqu1 {
   font-size: 18px;
-  background-color: yellow;
-
+  background-color: #ffaf602f;
+  border-style: dashed;
   font-family: 'Lato', serif;
 }
 
 #list {
-  color: rgb(83, 66, 156);
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-weight: 155;
 
 }
 
 .surahname {
-  color: rgb(4, 48, 49);
-  background-color: rgb(209, 160, 255);
+  color: black;
+  background-color: #ffaf602f;
   text-align: center;
 
 }
 
 
 #islamic-pillar {
-  color: indigo;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   scroll-behavior: smooth;
 
@@ -99,36 +109,35 @@ p {
 }
 
 .pillar-iman {
-  color: indigo;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-size: x-large;
-
+ border-style: dashed;
 }
 
 ol {
-  color: indigo;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
 }
 
 .islamic-info1 {
-  color: red;
-  background-color: yellow;
+  color: black;
+  background-color: #ffaf602f;
   font-style: italic;
 
   font-family: 'Lato', serif;
 }
 
 .audiotest {
-  color: red;
-  background-color: yellow;
-
+  color: black;
+  background-color: #ffaf602f;
 }
 
 .islampillar {
-  color: indigo;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
   margin-left: 150px;
   margin-right: 150px;
@@ -142,49 +151,49 @@ ol {
 }
 
 .ka3baa {
-  color: red;
-  background-color: yellow;
+  color: black;
+  background-color: #ffaf602f;
 
   font-family: 'Lato', serif;
 
 }
 
 #thisisquran {
-  background-color: pink;
+  background-color: #ffaf602f;
 
   font-family: 'Lato', serif;
 }
 
 h3 {
-  color: blue;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
 
   font-family: 'Lato', serif;
 }
 
 h2 {
-  color: blue;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
 
   font-family: 'Lato', serif;
 }
 
 form {
 
-  color: blue;
-  background-color: pink;
+  color: black;
+  background-color: #ffaf602f;
   font-family: 'Lato', serif;
 }
 
 .contact {
-  color: blue;
+  color: black;
   margin-left: 150px;
   font-family: 'Lato', serif;
   font-size: xx-large;
 }
 
 .seerah {
-  color: blue;
+  color: black;
   margin-right: 150px;
   font-family: 'Lato', serif;
   font-size: xx-large;
@@ -195,7 +204,7 @@ form {
   color: blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: x-large;
-  background-color: rgb(2, 158, 255);
+  background-color: #ffaf602f;
   border: none;
   height: 30px;
   width: 200px;
@@ -211,7 +220,7 @@ form {
   border-radius: 0%;
 }
 
-.pill{
+.pill {
   font-size: x-large;
 }
 
@@ -220,13 +229,13 @@ a:hover {
 }
 
 .nextpagebutton {
-  background-color: rgb(2, 158, 255);
+  background-color: #ff8000;
   color: white;
   border: none;
-  width: 74px;
+  width: 110px;
   border-radius: 15px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   padding: 10px;
   margin: 10px;
   text-decoration: none;
@@ -234,80 +243,3 @@ a:hover {
 }
 
 
-.seerah {
-  color: blue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: x-large;
-  background-color: rgb(2, 158, 255);
-  border: none;
-  height: 30px;
-  width: 135px;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-bottom: 15px;
-  text-align: justify;
-  margin-left: 250px;
-
-}
-
-.seerah:hover {
-  color: maroon;
-  border-radius: 0%;
-}
-
-.fiqh {
-  color: blue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: x-large;
-  background-color: rgb(2, 158, 255);
-  border: none;
-  height: 30px;
-  width: 100px;
-  border-radius: 15px;
-  cursor: pointer;
-  text-align: justify;
-
-}
-
-.fiqh:hover {
-  border-radius: 0%;
-}
-
-.quiz {
-  color: blue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: x-large;
-  background-color: rgb(2, 158, 255);
-  border: none;
-  height: 30px;
-  width: 65px;
-  border-radius: 15px;
-  cursor: pointer;
-  text-align: justify;
-
-}
-
-.quiz:hover {
-  color: black;
-  border-radius: 0%;
-
-}
-
-.contact {
-  color: blue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: x-large;
-  background-color: rgb(2, 158, 255);
-  border: none;
-  height: 30px;
-  width: 170px;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-top: 20px;
-  text-align: justify;
-}
-
-.contact:hover {
-  color: red;
-  border-radius: 0%;
-}
