@@ -14,7 +14,7 @@ document.getElementById("searchForm").addEventListener("submit", function (event
 
         "./aboutquran": ["quran", "revelation", "scripture", "recitation", "guidance", "inspiration", "divine", "truth", "spiritual"],
 
-        "./seerah": ["Prophet", "Muhammad", "biography", "history", "revelation", "messenger", "Islamic leader", "example", "role model", "guidance"],
+        "./seerah": ["Prophet", "Muhammad", "biography", "history", "revelation", "messenger", "Islamic leader", "seerah", "role model", "guidance"],
 
         "./feqh": ["fiqh", "jurisprudence", "scholar", "rulings", "Islamic law", "law", "Islamic rulings", "legal", "laws", "application"],
 
