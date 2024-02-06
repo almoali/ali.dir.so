@@ -1,80 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<center>
-
-    <head>
-        <title>A.D.S Islam</title>
+<head>
+    <title>A.D.S Islam</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-    </head>
+</head>
+<body>
+    <center>
+    <p class="introduction">
+        <span class="header">
+            Welcome to A.D.S Islam - Your Guide to Understanding the Islamic Faith.
+        </span><br><br>
 
-    <body>
-
-
-        <p class="introduction">
-            <span class="header">
-                Welcome to A.D.S Islam - Your Guide to Understanding the Islamic Faith.
-            </span><br><br>
-
-            <span class="introduction2">A.D.S Islam, also known as Ali.dir.so, offers a comprehensive library of
-                information on <br>
-                various aspects of Islam for new learners and those looking to deepen their knowledge. It <br>
-                includes detailed explanations of the Five Pillars of Islam, the six articles of faith, authentic <br>
-                Hadiths, and access to the Quran. Making it a valuable and informative resource for those <br>
-                interested in understanding and practicing Islam.
-            </span><br>
-        </p><br><br><br><br><br><br>
+        <span class="introduction2">A.D.S Islam, also known as Ali.dir.so, offers a comprehensive library of
+            information on <br>
+            various aspects of Islam for new learners and those looking to deepen their knowledge. It <br>
+            includes detailed explanations of the Five Pillars of Islam, the six articles of faith, authentic <br>
+            Hadiths, and access to the Quran. Making it a valuable and informative resource for those <br>
+            interested in understanding and practicing Islam.
+        </span><br>
+    </p><br><br><br><br><br><br>
 
 
-        <!DOCTYPE html>
-        <html lang="en">
+   
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Navigation</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
+        <!-- Navigation bar (menu icon) -->
+        <div class="navbar">
+            <a onclick="openNav()">&#9776;</a>
+        </div>
 
-        <body>
+        <!-- Side navigation -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./aboutislam">About Islam</a>
+            <a href="./thepillars">The Pillars</a>
+            <a href="./theka3ba">The Ka'aba</a>
+            <a href="./aboutquran">About Quran</a>
+            <a href="./seerah">Seerah</a>
+            <a href="./feqh">Fiqh</a>
+            <a href="./quiz">Quiz</a>
+            <a href="./contact">Contact</a>
+        </div>
 
-            <!-- Navigation bar (menu icon) -->
-            <div class="navbar">
-                <a onclick="openNav()">&#9776;</a>
-            </div>
-
-            <!-- Side navigation -->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="./aboutislam">About Islam</a>
-                <a href="./thepillars">The Pillars</a>
-                <a href="./theka3ba">The Ka'aba</a>
-                <a href="./aboutquran">About Quran</a>
-                <a href="./seerah">Seerah</a>
-                <a href="./feqh">Fiqh</a>
-                <a href="./quiz">Quiz</a>
-                <a href="./contact">Contact</a>
-            </div>
-
-            <script src="script.js"></script>
-        </body>
-
-        </html>
-
-        <form id="searchForm" action="#">
-            <input class="textbar" type="text" id="searchInput" placeholder="Enter keyword..."><br>
-
-            <button class="btn1" type="submit">Search</button>
-        </form>
-
-
-        <script src="textbar.js"></script>
-
+        <script src="script.js"></script>
     </body>
-</center>
 
+    
+
+    <form id="searchForm" action="#">
+        <input class="textbar" type="text" id="searchInput" placeholder="Enter keyword..."><br>
+
+        <button class="btn1" type="submit">Search</button>
+    </form>
+
+
+    <script src="textbar.js"></script>
+
+</body>
 </html>

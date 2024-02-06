@@ -143,11 +143,14 @@
   /* sets the font size to 2 times the parent element's font size */
   font-weight: bold;
   /* sets the font weight to bold */
+  font-family: sans-serif;
 }
 
 .introduction {
   font-size: 130%;
   border-style: dashed;
+  font-family: sans-serif;
+
 }
 
 .introduction2 {
