@@ -49,6 +49,12 @@
       font-size: 135%;
     }
 
+    .displayResult {
+      font-family: sans-serif;
+      font-size: 125%;
+
+    }
+
     body {
       background-color: #ffd8b1;
     }
@@ -181,53 +187,55 @@
     <h5 class="prog">QUIZ IS WORKING <br> TRY IT AND HAVE A NICE TIME TAKING THE QUIZ<br>
     </h5>
 
-    <div class="bounce" class="wobble" class="pulse" class="slide-in">
+    <div class="bounce wobble pulse slide-in">
       <p>Who is considered the final prophet in Islam?</p>
       <ul>
-        <li><input type="radio" name="answer1" value="Muhammad"> Muhammad</li>
-        <li><input type="radio" name="answer1" value="Moses"> Moses</li>
-        <li><input type="radio" name="answer1" value="Jesus"> Jesus</li>
-        <li><input type="radio" name="answer1" value="Abraham"> Abraham</li>
+        <li><input type="radio" name="answer1" value="Muhammad" required> Muhammad</li>
+        <li><input type="radio" name="answer1" value="Moses" required> Moses</li>
+        <li><input type="radio" name="answer1" value="Jesus" required> Jesus</li>
+        <li><input type="radio" name="answer1" value="Abraham" required> Abraham</li>
       </ul>
     </div>
     <div id="question2" class="question">
       <p>What is the name of the holy book of Islam?</p>
       <ul>
-        <li><input type="radio" name="answer2" value="Quran"> Quran</li>
-        <li><input type="radio" name="answer2" value="Bible"> Bible</li>
-        <li><input type="radio" name="answer2" value="Torah"> Torah</li>
-        <li><input type="radio" name="answer2" value="Vedas"> Vedas</li>
+        <li><input type="radio" name="answer2" value="Quran" required> Quran</li>
+        <li><input type="radio" name="answer2" value="Bible" required> Bible</li>
+        <li><input type="radio" name="answer2" value="Torah" required> Torah</li>
+        <li><input type="radio" name="answer2" value="Vedas" required> Vedas</li>
       </ul>
     </div>
     <div id="question3" class="question">
       <p>What is the pilgrimage to Mecca called in Islam?</p>
       <ul>
-        <li><input type="radio" name="answer3" value="Umrah"> Rajab</li>
-        <li><input type="radio" name="answer3" value="Hajj"> Hajj</li>
-        <li><input type="radio" name="answer3" value="Zakat"> Zakat</li>
-        <li><input type="radio" name="answer3" value="Salah"> Salah</li>
+        <li><input type="radio" name="answer3" value="Umrah" required> Rajab</li>
+        <li><input type="radio" name="answer3" value="Hajj" required> Hajj</li>
+        <li><input type="radio" name="answer3" value="Zakat" required> Zakat</li>
+        <li><input type="radio" name="answer3" value="Salah" required> Salah</li>
       </ul>
     </div>
     <div id="question4" class="question">
       <p>How many times a day do Muslims perform the mandatory prayer?</p>
       <ul>
-        <li><input type="radio" name="answer4" value="1"> 1</li>
-        <li><input type="radio" name="answer4" value="3"> 3</li>
-        <li><input type="radio" name="answer4" value="5"> 5</li>
-        <li><input type="radio" name="answer4" value="7"> 7</li>
+        <li><input type="radio" name="answer4" value="1" required> 1</li>
+        <li><input type="radio" name="answer4" value="3" required> 3</li>
+        <li><input type="radio" name="answer4" value="5" required> 5</li>
+        <li><input type="radio" name="answer4" value="7" required> 7</li>
       </ul>
     </div>
     <div id="question5" class="question">
       <p>What is the name of the month of fasting in Islam?</p>
       <ul>
-        <li><input type="radio" name="answer5" value="Eid"> Eid</li>
-        <li><input type="radio" name="answer5" value="Hijri"> Hijri</li>
-        <li><input type="radio" name="answer5" value="Ramadan"> Ramadan</li>
-        <li><input type="radio" name="answer5" value="Muharram"> Muharram</li>
+        <li><input type="radio" name="answer5" value="Eid" required> Eid</li>
+        <li><input type="radio" name="answer5" value="Hijri" required> Hijri</li>
+        <li><input type="radio" name="answer5" value="Ramadan" required> Ramadan</li>
+        <li><input type="radio" name="answer5" value="Muharram" required> Muharram</li>
       </ul>
     </div>
-    </div>
+
     <button onclick="submitQuiz()">Submit</button>
+
+    <div class="displayResult" id="displayResult"></div>
 
     <a class="nextpagebutton" href="./">
       Return To Home
@@ -235,77 +243,7 @@
 
   </center>
 
-  <script>
-    // Function to handle quiz submission
-    function submitQuiz() {
-      const incorrectAnswers = findIncorrectAnswers();
-      const score = 5 - incorrectAnswers.length;
-
-      if (score === 5) {
-        alert("Congratulations! You passed the quiz!");
-      } else {
-        let message = `Sorry, you did not pass the quiz. You got ${score} out of 5 questions correct.\n\n`;
-        message += "You answered the following questions incorrectly:\n";
-
-        incorrectAnswers.forEach((questionNumber) => {
-          message += `- Question ${questionNumber}\n`;
-        });
-
-        alert(message);
-      }
-    }
-
-    // Function to find the incorrect answers
-    function findIncorrectAnswers() {
-      const incorrectAnswers = [];
-
-      const selectedAnswers = [
-        document.querySelector('input[name="answer1"]:checked'),
-        document.querySelector('input[name="answer2"]:checked'),
-        document.querySelector('input[name="answer3"]:checked'),
-        document.querySelector('input[name="answer4"]:checked'),
-        document.querySelector('input[name="answer5"]:checked')
-      ];
-
-      selectedAnswers.forEach((answer, index) => {
-        const questionNumber = index + 1;
-        const correctAnswer = getCorrectAnswer(questionNumber);
-
-        if (!answer || answer.value !== correctAnswer) {
-          incorrectAnswers.push(questionNumber);
-        }
-      });
-
-      return incorrectAnswers;
-    }
-
-    // Function to get the correct answer for a question
-    function getCorrectAnswer(questionNumber) {
-      let correctAnswer;
-
-      switch (questionNumber) {
-        case 1:
-          correctAnswer = "Muhammad";
-          break;
-        case 2:
-          correctAnswer = "Quran";
-          break;
-        case 3:
-          correctAnswer = "Hajj";
-          break;
-        case 4:
-          correctAnswer = "5";
-          break;
-        case 5:
-          correctAnswer = "Ramadan";
-          break;
-        default:
-          break;
-      }
-
-      return correctAnswer;
-    }
-  </script>
+  <script src="./quiz.js"></script>
 
 
 </body>
