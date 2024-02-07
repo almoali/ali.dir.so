@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Define the webpage URLs and associated keywords
     var pages = {
         "./aboutislam": ["islam", "muslim", "faith", "religion", "belief", "Allah", "prophet", "Quran", "worship", "prayer"],
@@ -39,26 +39,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    searchInput.addEventListener('input', function() {
+    searchInput.addEventListener('input', function () {
         const query = this.value.toLowerCase().trim();
         const results = performSearch(query);
         updateSearchResults(results);
     });
 
-    searchInput.addEventListener('focus', function() {
+    searchInput.addEventListener('focus', function () {
         if (searchResults.innerHTML.trim() !== '') {
             searchResults.style.display = 'block';
         }
     });
 
-    searchInput.addEventListener('blur', function() {
+    searchInput.addEventListener('blur', function () {
         setTimeout(() => {
             searchResults.style.display = 'none';
         }, 200);
     });
 
     // Event listener for form submission
-    document.getElementById("searchForm").addEventListener("submit", function(event) {
+    document.getElementById("searchForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
         // Get the value of the input field
@@ -105,3 +105,27 @@ function closeNavOutside(event) {
         document.body.removeEventListener('click', closeNavOutside);
     }
 }
+
+// Function to get Hijri date
+function getHijriDate(gregorianDate) {
+    let gregorianDateString = gregorianDate.toISOString().slice(0, 10);
+    let url = `https://api.aladhan.com/gToH?date=${gregorianDateString}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            let hijriDate = data.data.hijri;
+            document.getElementById("hijriDate").textContent = "Hijri date: " + hijriDate.day + " " + hijriDate.month.en + " " + hijriDate.year;
+        })
+        .catch(error => console.error('Error fetching Hijri date:', error));
+}
+
+// Function to display current Gregorian date and fetch Hijri date
+function displayDate() {
+    let currentDate = new Date();
+    document.getElementById("currentDate").textContent = "Date: " + currentDate.toDateString();
+    getHijriDate(currentDate);
+}
+
+// Call displayDate function when the page loads
+window.onload = displayDate;
