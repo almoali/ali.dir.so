@@ -123,7 +123,7 @@ function getHijriDate(gregorianDate) {
 // Function to display current Gregorian date and fetch Hijri date
 function displayDate() {
     let currentDate = new Date();
-    document.getElementById("currentDate").textContent = "Date: " + currentDate.toDateString();
+    document.getElementById("currentDate").textContent = " " + currentDate.toDateString();
     getHijriDate(currentDate);
 }
 
