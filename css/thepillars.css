@@ -113,7 +113,7 @@ p {
   background-color: #ffaf602f;
   font-family: 'Lato', serif;
   font-size: x-large;
- border-style: dashed;
+  border-style: dashed;
 }
 
 ol {
@@ -241,5 +241,3 @@ a:hover {
   text-decoration: none;
   display: inline-block;
 }
-
-

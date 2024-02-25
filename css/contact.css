@@ -1,141 +1,208 @@
 body {
   background-color: #ffd8b1;
-  }
+}
 
-  a {
-    color: red;
+a {
+  color: red;
 
-  }
+}
 
-  .email {
-    background-color: pink;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+.email {
+  background-color: #ffaf602f;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-  .email:hover {
-    color: rgb(2, 158, 255);
-  }
+.email:hover {
+  color: rgb(2, 158, 255);
+}
 
-  h1 {
-    background-color: pink;
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+h1 {
+  background-color: #ffaf602f;
+  border-style: dashed;
+  color: black;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  p {
-    background-color: yellow;
-    color: blue;
-    font-family: 'Courier New', Courier, monospaces;
-  }
+p {
+  background-color: #ffaf602f;
+  color: black;
+  font-size: x-large;
 
-  .HOMEPAGE {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: blue;
-    border: none;
-    height: 30px;
-    width: 180px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-bottom: 15px;
-  }
+}
 
-  .quiz {
-    color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: blue;
-    border: none;
-    height: 30px;
-    width: 65px;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: justify;
-  }
+.HOMEPAGE {
+  color: blue;
 
-  .seerah {
-    color: rgb(2, 158, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    background-color: blue;
-    border: none;
-    height: 30px;
-    width: 150px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
+  font-size: x-large;
+  background-color: blue;
+  border: none;
+  height: 30px;
+  width: 180px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
 
-  .buttonforinfo {
-    background-color: rgb(2, 158, 255);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 74px;
-    border-radius: 18px;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: 10px;
-    text-align: center;
-  }
+.quiz {
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: blue;
+  border: none;
+  height: 30px;
+  width: 65px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: justify;
+}
 
-  .buttonforinfo:hover {
-    background-color: blue;
-  }
+.seerah {
+  color: rgb(2, 158, 255);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  background-color: blue;
+  border: none;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
-  .email-link {
-    text-decoration: none;
-    color: black;
-    display: inline-flex;
-    align-items: center;
-    padding: 9px 8px;
-    margin-left: -8px;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: border-color 0.15s cubic-bezier(0.4, 0, 1, 1);
-  }
+.buttonforinfo {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  height: 36px;
+  width: 74px;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
 
-  .blabla2:hover {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    color: black;
-    height: 222px;
-    border-radius: 2px;
-    cursor: pointer;
-    display: block;
-    height: 73px;
-    padding: 10px;
+.buttonforinfo:hover {
+  background-color: blue;
+}
 
-  }
+.email-link {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 8px;
+  margin-left: -8px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
 
-  .blabla2 {
-    display: block;
-    height: 73px;
-    padding: 10px;
-  }
+.blabla2:hover {
+  border-color: black;
+  border-style: solid;
+  padding: 15.5px;
+  border-width: 2px;
+  color: black;
+  border-radius: 20px;
+}
 
-  .gmail-icon2 {
-    margin-top: 12px;
-  }
+.blabla2 {
+  display: block;
+  height: 85px;
+  padding: 5px;
+  font-size: x-large;
+}
 
-  #submitbtn {
-    background: transparent;
-    width: 10%;
-    width: 167px;
-  }
+.gmail-icon2 {
+  margin-top: 12px;
+  font-size: xx-large;
+  color: black;
+}
 
-  #firstname {
-    background: transparent;
-    width: 167px;
-    border-color: blue;
+.Microsoft_Outlook_logo{
+  margin-top: 12px;
+  font-size: xx-large;
+  color: black;
+  
+}
 
-  }
+#submitbtn {
+  background: transparent;
+  width: 10%;
+  width: 167px;
+}
 
-  #lastname {
-    background: transparent;
-    width: 167px;
-    border-color: blue;
-  }
+#firstname {
+  background: transparent;
+  width: 167px;
+  border-color: blue;
+
+}
+
+#lastname {
+  background: transparent;
+  width: 167px;
+  border-color: blue;
+}
+
+
+.timer-header {
+  font-size: -20%;
+}
+
+.everthing-on-timer {
+  border-style: solid;
+  border-color: blue;
+}
+
+.handisa {
+  background-color: #ffaf602f;
+  margin-top: 3cm;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-style: dashed;
+}
+
+.nextpagebutton {
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  width: 110px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.countdown-container {
+  margin-top: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+#countdown {
+  font-size: 50px;
+  font-weight: bolder;
+  font-size: 55px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 900;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
