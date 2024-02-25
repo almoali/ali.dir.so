@@ -3,6 +3,7 @@
 
 <head>
   <title>Quiz</title>
+  <link rel="shortcut icon" href="/assets/favicon2.jpg" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -176,6 +177,72 @@
     ul {
       font-size: 120%;
     }
+
+    /* Style the side navigation */
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      /* Background color */
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    /* Navigation links */
+    .sidenav a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 30px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* On hover, the background color changes */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the navigation bar (menu icon) */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    /* Style the menu icon */
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* On hover, the background color changes */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Push content when side navigation is open */
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+      margin-left: 0;
+      /* Ensure main content starts at left edge */
+    }
   </style>
 </head>
 
@@ -241,10 +308,47 @@
       Return To Home
     </a>
 
+
+    <!-- Navigation bar (menu icon) -->
+    <div class="navbar">
+      <a onclick="openNav()">&#9776;</a>
+    </div>
+
+    <!-- Side navigation -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="./aboutislam">About Islam</a>
+      <a href="./thepillars">The Pillars</a>
+      <a href="./theka3ba">The Ka'aba</a>
+      <a href="./aboutquran">About Quran</a>
+      <a href="./seerah">Seerah</a>
+      <a href="./feqh">Fiqh</a>
+      <a href="./quiz">Quiz</a>
+      <a href="./contact">Contact</a>
+    </div>
+
   </center>
 
   <script src="./quiz.js"></script>
 
+
+  <!-- Navigation bar (menu icon) -->
+  <div class="navbar">
+    <a onclick="openNav()">&#9776;</a>
+  </div>
+
+  <!-- Side navigation -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./aboutislam">About Islam</a>
+    <a href="./thepillars">The Pillars</a>
+    <a href="./theka3ba">The Ka'aba</a>
+    <a href="./aboutquran">About Quran</a>
+    <a href="./seerah">Seerah</a>
+    <a href="./feqh">Fiqh</a>
+    <a href="./quiz">Quiz</a>
+    <a href="./contact">Contact</a>
+  </div>
 
 </body>
 
