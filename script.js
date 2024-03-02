@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Define the webpage URLs and associated keywords
     var pages = {
-        "./aboutislam": ["islam", "muslim", "faith", "religion", "belief", "Allah", "prophet", "Quran", "worship", "prayer"],
-        "./thepillars": ["pillar", "fasting", "charity", "pilgrimage", "belief", "divine", "faithful", "worshiper", "pious", "devout", "pillars"],
-        "./theka3ba": ["Kaaba", "Mecca", "pilgrimage", "hajj", "worship", "sacred", "spiritual", "devotion", "Muslims", "sacred site"],
-        "./aboutquran": ["quran", "revelation", "scripture", "recitation", "guidance", "inspiration", "divine", "truth", "spiritual"],
-        "./seerah": ["Prophet", "Muhammad", "biography", "history", "revelation", "messenger", "Islamic leader", "example", "role model", "guidance"],
-        "./feqh": ["fiqh", "jurisprudence", "scholar", "rulings", "Islamic law", "law", "Islamic rulings", "legal", "laws", "application"],
-        "./quiz": ["test", "exam", "knowledge", "questions", "challenge", "understanding", "assessment", "evaluation", "assessment", "checkup"],
-        "./contact": ["contact", "reach out", "message", "email", "phone", "support", "connect", "communication", "inquiry", "get in touch"]
+        "/About Islam/aboutislam": ["islam", "muslim", "faith", "religion", "belief", "Allah", "prophet", "Quran", "worship", "prayer"],
+        "/The Pillars/thepillars": ["pillar", "fasting", "charity", "pilgrimage", "belief", "divine", "faithful", "worshiper", "pious", "devout", "pillars"],
+        "/The Kaaba/theka3ba": ["Kaaba","kaaba", "Mecca", "pilgrimage", "hajj", "worship", "sacred", "spiritual", "devotion", "Muslims", "sacred site"],
+        "/About Quran/aboutquran": ["quran", "revelation", "scripture", "recitation", "guidance", "inspiration", "divine", "truth", "spiritual"],
+        "/Seerah/seerah": ["Prophet", "seerah", "Muhammad", "biography", "history", "revelation", "messenger", "Islamic leader", "example", "role model", "guidance"],
+        "/Fiqh/feqh": ["fiqh", "jurisprudence", "scholar", "rulings", "Islamic law", "law", "Islamic rulings", "legal", "laws", "application"],
+        "/Quiz/quiz": ["test", "exam", "knowledge", "questions", "challenge", "understanding", "assessment", "evaluation", "assessment", "checkup"],
+        "/Contact/contact": ["contact", "reach out", "message", "email", "phone", "support", "connect", "communication", "inquiry", "get in touch"]
     };
 
     const searchInput = document.getElementById('searchInput');
@@ -71,10 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = suggestions[0];
         } else {
             // Redirect to a page saying the content is not found
-            window.location.href = "./notfound.html";
+            window.location.href = "/Not found/notfound.html";
         }
     });
 });
+
 // Function to open the side navigation menu
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";

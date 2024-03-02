@@ -286,6 +286,7 @@ button[type="submit"]:hover {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-family: sans-serif;
 }
 
 /* On hover, the background color changes */
