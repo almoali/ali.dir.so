@@ -276,6 +276,7 @@ button[type="submit"]:hover {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-family: sans-serif;
 }
 
 /* Navigation links */
