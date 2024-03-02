@@ -52,7 +52,6 @@ p {
   font-size: large;
   font: bold;
   font-family: 'Lato', serif;
-  border-style: dashed;
 }
 
 .bigqu2 {
@@ -376,4 +375,35 @@ a:hover {
   padding: 16px;
   margin-left: 0;
   /* Ensure main content starts at left edge */
+}
+.footer-copyrights {
+  background-color: rgba(49, 28, 0, 0.1);
+  padding: 20px;
+  margin-top: 18%;
+
+}
+
+.footer-text {
+  font-family: sans-serif;
+}
+
+.footer-menu {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  color: black;
+  line-break: anywhere;
+}
+
+.footer-menu a {
+  font-family: sans-serif;
+  color: black;
+  margin-right: 5px;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+
 }

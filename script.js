@@ -125,3 +125,44 @@ function closeNavOutside(event) {
 window.addEventListener('DOMContentLoaded', function() {
     highlightCurrentPage();
 });
+
+// hijri_date.js
+document.addEventListener("DOMContentLoaded", function () {
+    var currentDateElement = document.getElementById("currentDate");
+    var hijriDateElement = document.getElementById("hijriDate");
+
+    // Get today's Gregorian date
+    var today = new Date();
+
+    // Convert Gregorian date to Hijri date
+    var hijriDate = gregorianToHijri(today);
+    var hijriDateComponents = hijriDate.split(' ');
+
+    // Display Gregorian date
+    var gregorianDate = today.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+    currentDateElement.textContent = "" + gregorianDate;
+
+    // Display Hijri date
+    hijriDateElement.textContent = "Today Islamic date: " + hijriDate;
+});
+
+// Function to convert Gregorian date to Hijri date
+function gregorianToHijri(gregorianDate) {
+    var utcDate = Date.UTC(gregorianDate.getFullYear(), gregorianDate.getMonth(), gregorianDate.getDate());
+    var julianDay = Math.floor(utcDate / (1000 * 60 * 60 * 24) - 0.5) + 2440588;
+    var hijriDay = Math.floor((julianDay - 1948440) / 29.530588853);
+    var hijriDate = hijriDay + 1;
+    var hijriMonth = (Math.floor((julianDay - 1948440 - Math.floor(hijriDay * 29.530588853)) / 29.530588853) + 1) % 12;
+    var hijriYear = Math.floor((julianDay - 1948440 - Math.floor(hijriDay * 29.530588853)) / 354.36667) + 1;
+    if (hijriYear <= 0) {
+        hijriYear--;
+    }
+
+    var hijriMonths = [
+        "Muharram", "Safar", "Rabi' al-awwal", "Rabi' al-thani", "Jumada al-awwal",
+        "Jumada al-thani", "Rajab", "Sha'ban", "Ramadan", "Shawwal", "Dhu al-Qi'dah", "Dhu al-Hijjah"
+    ];
+
+    var hijriMonthName = hijriMonths[hijriMonth];
+    return hijriDate + ' ' + hijriMonthName + ' ' + hijriYear;
+}
