@@ -1,0 +1,239 @@
+body {
+  background-color: #ffd8b1;
+  font-family: 'Lato', serif;
+}
+
+h1 {
+  color: black;
+  font-family: 'Lato', serif;
+  border-style: dashed;
+}
+
+.islamic-info {
+  background-color: #ffaf602f;
+}
+
+#islamic-pillars {
+  background-color: #ffaf602f;
+  font-weight: 900;
+}
+
+#islamic-iman {
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 900;
+  border-style: dashed;
+}
+
+.quranrec {
+  background-color: pink;
+  font: bold;
+}
+
+p {
+  color: black;
+  background-color: #ffaf602f;
+  border-style: dashed;
+  font-family: 'Lato', serif;
+}
+
+.ka3baa {
+  background-color: #ffaf602f;
+  border-style: dashed;
+}
+
+
+
+#list {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  font-weight: 155;
+
+}
+
+.surahname {
+  color: black;
+  background-color: #ffaf602f;
+  text-align: center;
+
+}
+
+
+#islamic-pillar {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  scroll-behavior: smooth;
+
+
+}
+
+.pillar-iman {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+
+}
+
+
+.islampillar {
+  color: black;
+  background-color: #ffaf602f;
+  font-family: 'Lato', serif;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+
+
+.ka3baa {
+  color: black;
+  background-color: #ffaf602f;
+  text-align: center;
+  font-family: 'Lato', serif;
+  font-size: 220%;
+  border-style: dashed;
+}
+
+
+h3 {
+  color: black;
+  background-color: #ffaf602f;
+  font-size: xx-large;
+  font-family: 'Lato', serif;
+  text-align: center;
+  border-style: dashed;
+}
+
+h2 {
+  color: black;
+  background-color: #ffaf602f;
+  border-style: dashed;
+  font-family: 'Lato', serif;
+}
+
+a {
+  border-radius: 5px;
+}
+
+.MOREINFO {
+  font-size: x-large;
+  text-align: center;
+}
+
+a:hover {
+  color: black;
+}
+
+.nextpagebutton {
+  background-color: #ff8000;
+  color: white;
+  border: none;
+  width: 110px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 45%;
+  text-align: center;
+}
+
+.informationaboutka3ba1 {
+  font-size: 160%;
+}
+
+.imageofka3ba {
+  border-style: solid;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+  size: 10%;
+  align-items: center;
+
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  /* Background color */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Navigation links */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* On hover, the background color changes */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Highlight the current page in the side navigation menu */
+.sidenav a.current-page {
+    font-weight: bold;
+}
+
+/* Position and style the navigation bar (menu icon) */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Style the menu icon */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* On hover, the background color changes */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Push content when side navigation is open */
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 0;
+  /* Ensure main content starts at left edge */
+}

@@ -1,0 +1,126 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Define the webpage URLs and associated keywords
+    var pages = {
+        "./aboutislam": ["islam", "muslim", "faith", "religion", "belief", "Allah", "prophet", "Quran", "worship", "prayer"],
+        "./thepillars": ["pillar", "fasting", "charity", "pilgrimage", "belief", "divine", "faithful", "worshiper", "pious", "devout", "pillars"],
+        "./theka3ba": ["Kaaba", "Mecca", "pilgrimage", "hajj", "worship", "sacred", "spiritual", "devotion", "Muslims", "sacred site"],
+        "./aboutquran": ["quran", "revelation", "scripture", "recitation", "guidance", "inspiration", "divine", "truth", "spiritual"],
+        "./seerah": ["Prophet", "Muhammad", "biography", "history", "revelation", "messenger", "Islamic leader", "example", "role model", "guidance"],
+        "./feqh": ["fiqh", "jurisprudence", "scholar", "rulings", "Islamic law", "law", "Islamic rulings", "legal", "laws", "application"],
+        "./quiz": ["test", "exam", "knowledge", "questions", "challenge", "understanding", "assessment", "evaluation", "assessment", "checkup"],
+        "./contact": ["contact", "reach out", "message", "email", "phone", "support", "connect", "communication", "inquiry", "get in touch"]
+    };
+
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('search-results');
+
+    function performSearch(query) {
+        var suggestions = [];
+        // Check if the keyword matches any page
+        for (var page in pages) {
+            if (pages[page].includes(query)) {
+                suggestions.push(page);
+            }
+        }
+        return suggestions;
+    }
+
+    function updateSearchResults(results) {
+        searchResults.innerHTML = '';
+        if (results.length > 0) {
+            results.forEach(result => {
+                const li = document.createElement('li');
+                li.textContent = result;
+                searchResults.appendChild(li);
+            });
+            searchResults.style.display = 'block';
+        } else {
+            searchResults.style.display = 'none';
+        }
+    }
+
+    searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase().trim();
+        const results = performSearch(query);
+        updateSearchResults(results);
+    });
+
+    searchInput.addEventListener('focus', function () {
+        if (searchResults.innerHTML.trim() !== '') {
+            searchResults.style.display = 'block';
+        }
+    });
+
+    searchInput.addEventListener('blur', function () {
+        setTimeout(() => {
+            searchResults.style.display = 'none';
+        }, 200);
+    });
+
+    // Event listener for form submission
+    document.getElementById("searchForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get the value of the input field
+        var keyword = searchInput.value.toLowerCase().trim();
+
+        var suggestions = performSearch(keyword);
+
+        if (suggestions.length > 0) {
+            // Redirect to the first matching page
+            window.location.href = suggestions[0];
+        } else {
+            // Redirect to a page saying the content is not found
+            window.location.href = "./notfound.html";
+        }
+    });
+});
+// Function to open the side navigation menu
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+// Function to close the side navigation menu
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+// Function to toggle the side navigation menu
+function toggleNav() {
+    var sidenav = document.getElementById("mySidenav");
+    if (sidenav.style.height === "100%" || sidenav.style.height === "") {
+        sidenav.style.height = "0";
+    } else {
+        sidenav.style.height = "100%";
+    }
+}
+
+// Function to highlight the current page in the side navigation menu
+function highlightCurrentPage() {
+    var currentPath = window.location.pathname;
+    var links = document.querySelectorAll('.sidenav a');
+    links.forEach(function(link) {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('current-page');
+        } else {
+            link.classList.remove('current-page');
+        }
+    });
+}
+
+// Function to close the side navigation menu when clicking outside of it
+function closeNavOutside(event) {
+    var sidenav = document.getElementById("mySidenav");
+    // Check if the clicked element is not inside the side navigation
+    if (!event.target.closest('.sidenav')) {
+        sidenav.style.height = "0";
+        document.body.removeEventListener('click', closeNavOutside);
+    }
+}
+
+// Call the function to highlight the current page when the page loads
+window.addEventListener('DOMContentLoaded', function() {
+    highlightCurrentPage();
+});
