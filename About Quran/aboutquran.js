@@ -42,8 +42,43 @@ function closeNavOutside(event) {
         document.body.removeEventListener('click', closeNavOutside);
     }
 }
+function showsurah(id) {
+    fetch("https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number="+id, { headers: {
+        "accept": "application/json"
+    }})
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("surahs").innerHTML = "";
 
+        for(var i=0; i<=data.verses.length - 1;i++) { 
+            var ayah = document.createElement("div");
+            ayah.innerHTML = data.verses[i].text_uthmani_tajweed;
+
+            document.getElementById("surahs").appendChild(ayah);
+
+        }
+    })
+}
 // Call the function to highlight the current page when the page loads
 window.addEventListener('DOMContentLoaded', function() {
     highlightCurrentPage();
+    let params = (new URL(document.location)).searchParams;
+    let surah = params.get("surah");
+    if (surah >= 1 && surah <=114) {
+        showsurah(surah);
+    } else {
+
+        fetch("https://api.quran.com/api/v4/chapters", { headers: {
+            "accept": "application/json"
+        }})
+        .then(response => response.json())
+        .then(data => {
+            for(var i=0; i<=data.chapters.length - 1;i++) { 
+                var surahName = document.createElement("li");
+                surahName.innerHTML = `<a href="aboutquran.html?surah=${data.chapters[i].id}" id="${data.chapters[i].id}">${data.chapters[i].name_simple}</a>`;
+
+                document.getElementById("surahs").appendChild(surahName)
+            }
+        })
+    }
 });
