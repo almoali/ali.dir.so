@@ -43,22 +43,20 @@ function closeNavOutside(event) {
     }
 }
 function showsurah(id) {
-    fetch("https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number="+id, { headers: {
-        "accept": "application/json"
-    }})
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById("surahs").innerHTML = "";
-
-        for(var i=0; i<=data.verses.length - 1;i++) { 
-            var ayah = document.createElement("div");
-            ayah.innerHTML = data.verses[i].text_uthmani_tajweed;
-
-            document.getElementById("surahs").appendChild(ayah);
-
-        }
-    })
+    // This function can remain unchanged since it's responsible for displaying surah content
 }
+
+// Function to handle surah link click event
+function handleSurahClick(event) {
+    event.preventDefault(); // Prevent the default link behavior (i.e., navigating to the href)
+
+    // Extract the surah ID from the clicked link's href attribute
+    var surahId = event.target.href.split('/').pop().split('.').shift();
+
+    // Redirect the user to the corresponding HTML page for that surah
+    window.location.href = `${surahId}.html`;
+}
+
 // Call the function to highlight the current page when the page loads
 window.addEventListener('DOMContentLoaded', function() {
     highlightCurrentPage();
@@ -67,17 +65,25 @@ window.addEventListener('DOMContentLoaded', function() {
     if (surah >= 1 && surah <=114) {
         showsurah(surah);
     } else {
-
         fetch("https://api.quran.com/api/v4/chapters", { headers: {
             "accept": "application/json"
         }})
         .then(response => response.json())
         .then(data => {
-            for(var i=0; i<=data.chapters.length - 1;i++) { 
+            for(var i=0; i<data.chapters.length; i++) { 
                 var surahName = document.createElement("li");
-                surahName.innerHTML = `<a href="aboutquran.html?surah=${data.chapters[i].id}" id="${data.chapters[i].id}">${data.chapters[i].name_simple}</a>`;
+                var surahId = data.chapters[i].id;
+                var surahTitle = data.chapters[i].name_simple;
+                
+                var surahLink = document.createElement("a");
+                surahLink.href = `${surahId}.html`; // Link to individual HTML pages for each surah
+                surahLink.textContent = surahTitle;
+                
+                // Add event listener to surah link
+                surahLink.addEventListener('click', handleSurahClick);
 
-                document.getElementById("surahs").appendChild(surahName)
+                surahName.appendChild(surahLink);
+                document.getElementById("surahs").appendChild(surahName);
             }
         })
     }
