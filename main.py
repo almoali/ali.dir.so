@@ -91,9 +91,11 @@ content_template = """
 <html lang="en">
 
 <head>
+    <link href="https://alquran.cloud/public/css/font-all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/About Quran/aboutquran.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/About Quran/aboutquran.css">
+    <link rel="shortcut icon" href="/assets/favicon2.jpg" type="image/x-icon">
     <title>{surah_name}</title>
 </head>
 
