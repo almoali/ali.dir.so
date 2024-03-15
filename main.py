@@ -343,7 +343,7 @@ content_template = """
     <div style="padding: 1%;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
     <div style="padding: 1%;" id="surahContent"></div>
 
-    <a class="nextsurah" href="//About Quran/{next_surah_id}.html">
+    <a class="nextsurah" href="/About Quran/{next_surah_id}.html">
         Next Surah
     </a>
 
