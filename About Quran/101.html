@@ -9,14 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/favicon2.jpg" type="image/x-icon">
     <title>Al-Qari'ah</title>
+    <style>
+    .nextsurah {
+        background-color: #ff8000;
+        color: white;
+        border: none;
+        width: 110px;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    </style>
 </head>
 
 <body>
     <center>
+    <div style="padding: 1%;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
     <div style="padding: 1%;" id="surahContent"></div>
 
+    <a class="nextsurah" href="//About Quran/102.html">
+        Next Surah
+    </a>
+
     <script>
-        function showsurah(id) {
+        function showsurah(id, name) {
             fetch("https://api.quran.com/api/v4/quran/verses/uthmani_tajweed?chapter_number=" + id, {
                 headers: {
                     "accept": "application/json"
@@ -45,7 +65,7 @@
         }
 
         // Call the showsurah function with a valid surah ID and name
-        showsurah(101); // Al-Qari'ah
+        showsurah(101, "Al-Qari'ah");
     </script>
 </body>
 
