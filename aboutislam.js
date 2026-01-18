@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // 1. Scroll Reveal Observer
     const sections = document.querySelectorAll('.fade-in-section');
-    
+
     const options = {
         threshold: 0.2
     };
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // 2. Mobile Menu Logic
-    window.toggleMenu = function() {
+    window.toggleMenu = function () {
         const links = document.getElementById('navLinks');
         if (links.style.display === 'flex') {
             links.style.display = 'none';
