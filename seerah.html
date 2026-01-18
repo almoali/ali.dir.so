@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Seerah | A.D.S Islam</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(4, 78, 61, 0.9), rgba(6, 78, 59, 0.8)), url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 6rem 2rem;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        .main-content {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            border-left: 2px solid var(--primary);
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="assets/logo-simple.png" type="image/png">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-icon.png" alt="A.D.S Islam Logo">
+                A.D.S <span>ISLAM</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="aboutislam.html">About Islam</a>
+                <a href="aboutquran.html">Quran</a>
+                <a href="thepillars.html">Pillars</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-hero">
+        <h1>The Seerah</h1>
+        <p class="hero-subtitle">Life of Prophet Muhammad (Peace Be Upon Him)</p>
+    </div>
+
+    <main class="main-content">
+        <h2>Timeline of Key Events</h2>
+        <div class="timeline-item">
+            <span class="timeline-date">570 CE</span>
+            <h3>Birth in Mecca</h3>
+            <p>Prophet Muhammad was born in the year of the Elephant.</p>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-date">610 CE</span>
+            <h3>The First Revelation</h3>
+            <p>At the age of 40, in the Cave of Hira, the first verses of the Quran were revealed.</p>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-date">622 CE</span>
+            <h3>The Hijra</h3>
+            <p>Migration from Mecca to Medina, marking the beginning of the Islamic Calendar.</p>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-date">630 CE</span>
+            <h3>Conquest of Mecca</h3>
+            <p>Peaceful return to Mecca and cleansing of the Kaaba.</p>
+        </div>
+        <div class="timeline-item">
+            <span class="timeline-date">632 CE</span>
+            <h3>The Farewell Sermon & Death</h3>
+            <p>Completion of the religion and passing of the Prophet.</p>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2023-2026 A.D.S Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

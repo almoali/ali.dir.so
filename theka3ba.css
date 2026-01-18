@@ -1,0 +1,144 @@
+/* --- Kaaba Page Renovation --- */
+
+:root {
+    --emerald: #064e3b;
+    --gold: #d97706;
+    --cream: #fdfcf0;
+}
+
+/* Hero with New Image */
+.kaaba-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(6, 78, 59, 0.6)),
+        url('assets/kaaba-hero.png');
+    /* High-quality Kaaba Image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.kaaba-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+/* Content Container */
+.kaaba-content {
+    max-width: 1000px;
+    margin: -80px auto 50px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.glass-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--emerald);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Features Row */
+.features-row {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.feature-box {
+    flex: 1;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-bottom: 4px solid var(--gold);
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: var(--emerald);
+    margin-bottom: 1.5rem;
+}
+
+/* Grid for "More Info" */
+.more-info-grid {
+    background: var(--emerald);
+    color: white;
+    padding: 5rem;
+    border-radius: 30px;
+    margin-top: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.grid-item h4 {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+
+    .features-row,
+    .grid-container {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .kaaba-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .glass-card {
+        padding: 2rem;
+    }
+}

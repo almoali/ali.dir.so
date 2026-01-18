@@ -1,0 +1,159 @@
+/* --- Professional Layout --- */
+
+.about-hero {
+    height: 65vh;
+    background: linear-gradient(rgba(6, 78, 59, 0.75), rgba(0, 0, 0, 0.6)), 
+                url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1600&q=80'); /* Professional Mosque Image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+.article-content {
+    max-width: 1100px;
+    margin: -80px auto 0;
+    background: white;
+    padding: 5rem 4rem;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    position: relative;
+    z-index: 5;
+}
+
+/* --- The Pillars Section (Interactive & Smooth) --- */
+.pillars-modern {
+    margin: 6rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.pillar-card {
+    background: #fdfcf0;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f1efe0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pillar-card:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(6, 78, 59, 0.2);
+}
+
+.pillar-num {
+    font-size: 3rem;
+    font-weight: 900;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: 0.3s;
+}
+
+.pillar-card:hover .pillar-num {
+    opacity: 0.3;
+    color: var(--accent);
+}
+
+.pillar-card h3 {
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.pillar-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* --- Info Boxes --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.info-box {
+    padding: 2.5rem;
+    border-left: 5px solid var(--accent);
+    background: #f9fafb;
+    border-radius: 0 15px 15px 0;
+}
+
+.info-box i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* --- Animations --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-cta {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.glass-btn {
+    background: var(--primary);
+    color: white;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.glass-btn:hover {
+    background: var(--accent);
+    box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-content { padding: 2rem; margin-top: 0; }
+    .hero-overlay h1 { font-size: 2.8rem; }
+    .info-grid { grid-template-columns: 1fr; }
+    .content-row { flex-direction: column; text-align: center; }
+}
