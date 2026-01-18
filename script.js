@@ -65,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* --- 3. Search Functionality --- */
     const pages = {
-        "aboutislam.html": ["islam", "muslim", "faith", "religion", "belief", "allah", "prophet"],
-        "thepillars.html": ["pillar", "fasting", "charity", "hajj", "zakat", "prayer", "faith"],
-        "theka3ba.html": ["kaaba", "mecca", "hajj", "makkah", "pilgrimage"],
-        "aboutquran.html": ["quran", "revelation", "scripture", "surah"],
-        "seerah.html": ["prophet", "muhammad", "biography", "messenger"],
-        "fiqh.html": ["fiqh", "law", "rulings", "jurisprudence"],
-        "quiz.html": ["test", "exam", "knowledge", "quiz"]
+        "aboutislam": ["islam", "muslim", "faith", "religion", "belief", "allah", "prophet"],
+        "thepillars": ["pillar", "fasting", "charity", "hajj", "zakat", "prayer", "faith"],
+        "theka3ba": ["kaaba", "mecca", "hajj", "makkah", "pilgrimage"],
+        "aboutquran": ["quran", "revelation", "scripture", "surah"],
+        "seerah": ["prophet", "muhammad", "biography", "messenger"],
+        "fiqh": ["fiqh", "law", "rulings", "jurisprudence"],
+        "quiz": ["test", "exam", "knowledge", "quiz"]
     };
 
     const searchForm = document.getElementById('searchForm');

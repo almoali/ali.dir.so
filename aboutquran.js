@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const surahGrid = document.getElementById('surahGrid');
     const searchInput = document.getElementById('surahSearch');
     let allSurahs = [];
@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("https://api.quran.com/api/v4/chapters", {
         headers: { "accept": "application/json" }
     })
-    .then(response => response.json())
-    .then(data => {
-        allSurahs = data.chapters;
-        renderSurahs(allSurahs);
-    })
-    .catch(error => {
-        surahGrid.innerHTML = `<p class="error">Unable to load Surahs. Please try again later.</p>`;
-    });
+        .then(response => response.json())
+        .then(data => {
+            allSurahs = data.chapters;
+            renderSurahs(allSurahs);
+        })
+        .catch(error => {
+            surahGrid.innerHTML = `<p class="error">Unable to load Surahs. Please try again later.</p>`;
+        });
 
     // 2. Render Function
     function renderSurahs(chapters) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const card = document.createElement('a');
             card.className = 'surah-card';
             card.href = `surahs/${chapter.id}.html`; // Links to surah files
-            
+
             card.innerHTML = `
                 <div class="surah-number">${chapter.id}</div>
                 <div class="surah-info">
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // 3. Search Filter Logic
     searchInput.addEventListener('input', (e) => {
         const term = e.target.value.toLowerCase();
-        const filtered = allSurahs.filter(s => 
-            s.name_simple.toLowerCase().includes(term) || 
+        const filtered = allSurahs.filter(s =>
+            s.name_simple.toLowerCase().includes(term) ||
             s.id.toString() === term
         );
         renderSurahs(filtered);
