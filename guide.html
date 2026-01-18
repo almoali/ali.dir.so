@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Guide - Your Islamic Learning Assistant</title>
+    <link rel="stylesheet" href="style.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="css/guide.css"> <!-- Guide specific styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo-simple.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Consistent with main site if possible, but simplified for the tool) -->
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index" class="logo">
+                <img src="assets/logo-icon.png" alt="A.D.S Islam Logo">
+                A.D.S <span>ISLAM</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="aboutislam">About Islam</a>
+                <a href="thepillars">Pillars</a>
+                <a href="aboutquran">Quran</a>
+                <a href="seerah">Seerah</a>
+                <a href="guide.html" style="color: #d4af37; font-weight: 600;">A.D.S Guide</a>
+                <a href="contact">Contact</a>
+            </div>
+            <div class="header-actions">
+                <button id="header-login-btn" class="btn-ghost-header">Log In</button>
+                <button id="header-signup-btn" class="btn-primary-header">Sign Up</button>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-small">
+                    <i class="fas fa-mosque"></i>
+                    <span>ADS</span>
+                </div>
+            </div>
+
+            <div class="user-profile-card hidden" id="sidebar-user-card">
+                <div class="avatar-circle">
+                    <span id="user-initial">A</span>
+                </div>
+                <div class="user-info">
+                    <h3 id="sidebar-username">Guest</h3>
+                    <p>Free Plan</p>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h4><i class="fas fa-history"></i> Chat History</h4>
+                <div class="history-list" id="history-list">
+                    <!-- History items will be injected here -->
+                    <div class="history-item active">
+                        <i class="far fa-comments"></i>
+                        <span>Current Session</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <button id="auth-btn" class="btn-sidebar">
+                    <i class="fas fa-sign-in-alt"></i> Log In
+                </button>
+            </div>
+        </aside>
+
+        <!-- Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="bot-info">
+                    <div class="bot-icon">
+                        <img src="https://img.icons8.com/color/96/mosque.png" alt="ADS Guide">
+                        <span class="status-dot"></span>
+                    </div>
+                    <div class="header-text">
+                        <h2 id="header-greeting">ADS Guide</h2>
+                        <span class="subtitle">Production-Grade Islamic Assistant</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="messages-container" id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message bot-message welcome-msg">
+                    <div class="message-content">
+                        <h3>Assalamu Alaikum!</h3>
+                        <p>I am your advanced Islamic learning companion. I can assist you with:</p>
+                        <ul>
+                            <li>Understanding Quranic verses</li>
+                            <li>Hadith and Sunnah</li>
+                            <li>Prayer times and method</li>
+                        </ul>
+                        <p class="login-hint">Please log in to save your chat history.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Ask a question about Islam..." rows="1" disabled></textarea>
+                    <button id="send-btn" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="disclaimer">ADS Guide answers based on general Islamic knowledge. Always consult a scholar for
+                    personal fatwas.</p>
+            </div>
+    </div>
+
+    </main>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal hidden">
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">Log In</button>
+                <button class="tab-btn" data-tab="signup">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="auth-form active">
+                <h3>Welcome Back</h3>
+                <p class="form-subtitle">Continue your journey with ADS Guide</p>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="login-email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="login-password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn-full">Sign In</button>
+                <p class="error-msg hidden" id="login-error"></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="auth-form">
+                <h3>Create Account</h3>
+                <p class="form-subtitle">Join us to save your chat history</p>
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="signup-name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="signup-email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="signup-password" required placeholder="Create a strong password">
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="signup-confirm" required placeholder="Repeat password">
+                </div>
+                <button type="submit" class="btn-full">Create Account</button>
+                <p class="error-msg hidden" id="signup-error"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/guide.js"></script>
+    <style src="css/guide.css"></style>
+</body>
+
+</html>
