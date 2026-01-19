@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- State ---
-    const API_URL = 'http://localhost:3000/api';
+    const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? 'http://localhost:3000/api'
+        : 'https://ali-dir-so.onrender.com/api'; // Production URL matches Render service name
     let currentUser = null;
     let authToken = localStorage.getItem('ads_token');
 
